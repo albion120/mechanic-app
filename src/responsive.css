@@ -1,0 +1,46 @@
+/* Intrinsic sizes must not widen nested form/history tracks as content changes. */
+.form-stack, .field, .diagnostic-history, .diagnosis-card, .ai-result-column {
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
+  max-width: 100%;
+}
+.form-fields { border: 0; padding: 0; margin: 0; width: 100%; }
+.page-content > section, .panel > *, .diagnosis-header > *, .page-heading > *,
+.section-heading > *, .panel-heading > *, .safety-advice > *, .mechanic-card > *,
+.appointment-details, .ai-layout > * { min-width: 0; max-width: 100%; }
+.page-heading, .section-heading, .panel-heading, .diagnosis-header { flex-wrap: wrap; }
+.panel, .field, .notice, .mechanic-card, .appointment-details, .translation-result,
+.page-heading, .section-heading { overflow-wrap: anywhere; }
+.field input, .field select, .field textarea { box-sizing: border-box; width: 100%; max-width: 100%; min-width: 0; }
+.field select { text-overflow: ellipsis; }
+.field textarea { white-space: pre-wrap; overflow-wrap: anywhere; }
+.cause-list, .follow-up-questions { min-width: 0; max-width: 100%; }
+.cause-list li, .follow-up-questions li { min-width: 0; overflow-wrap: anywhere; }
+.button { max-width: 100%; white-space: normal; text-align: center; }
+.nav-link { text-decoration: none; }
+.topbar { height: auto; min-height: 76px; flex-wrap: wrap; gap: 12px; padding-block: 12px; }
+.main-nav { flex-wrap: wrap; min-width: 0; }
+.language-selector { display: inline-flex; align-items: center; gap: 5px; max-width: 100%; }
+.language-selector select { min-width: 0; max-width: 125px; min-height: 40px; padding: 6px; border: 1px solid var(--line); border-radius: 8px; background: white; color: var(--ink); }
+.auth-language { display: flex; justify-content: flex-end; padding: 10px 20px; }
+.landing-header, .landing-actions, .landing-nav { flex-wrap: wrap; gap: 12px; }
+.translator { margin-top: 24px; }
+.translator .form-stack { margin-top: 16px; }
+.translation-result { white-space: pre-wrap; margin-top: 16px; }
+.mechanic-card { flex-wrap: wrap; }
+.mechanics-map { isolation: isolate; }
+.muted, .ai-disclaimer, .field-hint { color: #56655e; }
+@media (max-width: 850px) {
+  .main-nav { overflow-x: visible; }
+  .topbar .account-menu { margin-left: auto; }
+}
+@media (max-width: 560px) {
+  .page-heading { align-items: flex-start; }
+  .diagnosis-header { flex-direction: column; }
+  .diagnostic-actions > * { width: 100%; }
+  .landing-nav { display: flex; }
+  .landing-header { padding: 16px; }
+  .panel { padding: 18px; }
+  .main-nav { width: 100%; order: 3; }
+  .nav-link { padding: 8px 10px; }
+}

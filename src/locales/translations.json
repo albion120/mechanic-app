@@ -1,0 +1,1422 @@
+{
+  "Kryefaqja": {
+    "sq": "Kryefaqja",
+    "en": "Home",
+    "de": "Startseite"
+  },
+  "Terminet": {
+    "sq": "Terminet",
+    "en": "Appointments",
+    "de": "Termine"
+  },
+  "AI Mechanic": {
+    "sq": "AI Mechanic",
+    "en": "AI Assistant",
+    "de": "KI-Assistent"
+  },
+  "OBD-II": {
+    "sq": "OBD-II",
+    "en": "OBD-II",
+    "de": "OBD-II"
+  },
+  "Admin": {
+    "sq": "Admin",
+    "en": "Admin",
+    "de": "Admin"
+  },
+  "/1500 karaktere": {
+    "sq": "/1500 karaktere",
+    "en": "/1500 characters",
+    "de": "/1500 Zeichen"
+  },
+  "A dëshiron ta fshish këtë termin?": {
+    "sq": "A dëshiron ta fshish këtë termin?",
+    "en": "Delete this appointment?",
+    "de": "Diesen Termin löschen?"
+  },
+  "ASISTENTI I SERVISIT": {
+    "sq": "ASISTENTI I SERVISIT",
+    "en": "VEHICLE ASSISTANT",
+    "de": "FAHRZEUGASSISTENT"
+  },
+  "Administrimi": {
+    "sq": "Administrimi",
+    "en": "Administration",
+    "de": "Verwaltung"
+  },
+  "Adresa nuk është dhënë": {
+    "sq": "Adresa nuk është dhënë",
+    "en": "Address unavailable",
+    "de": "Adresse nicht verfügbar"
+  },
+  "Analiza AI nuk mund të kryhet.": {
+    "sq": "Analiza AI nuk mund të kryhet.",
+    "en": "AI assessment is unavailable.",
+    "de": "KI-Einschätzung nicht verfügbar."
+  },
+  "Analiza jote do të shfaqet këtu": {
+    "sq": "Analiza jote do të shfaqet këtu",
+    "en": "Your assessment will appear here",
+    "de": "Deine Einschätzung erscheint hier"
+  },
+  "Analiza është informuese dhe nuk zëvendëson kontrollin e mekanikut. Nëse vetura nuk është e sigurt për vozitje, ndalo dhe kërko ndihmë profesionale.": {
+    "sq": "Analiza është informuese dhe nuk zëvendëson kontrollin e mekanikut. Nëse vetura nuk është e sigurt për vozitje, ndalo dhe kërko ndihmë profesionale.",
+    "en": "This is guidance, not a mechanic's inspection. If the vehicle is unsafe to drive, stop safely and seek professional help.",
+    "de": "Diese Hinweise ersetzen keine Prüfung durch eine Werkstatt. Ist das Fahrzeug nicht fahrsicher, halte sicher an und hole professionelle Hilfe."
+  },
+  "Analizo dhe ruaj": {
+    "sq": "Analizo dhe ruaj",
+    "en": "Assess and save",
+    "de": "Bewerten und speichern"
+  },
+  "Analizo kodin OBD-II dhe ruaj raportet për veturën tënde.": {
+    "sq": "Analizo kodin OBD-II dhe ruaj raportet për veturën tënde.",
+    "en": "Review an OBD-II code and save reports for your vehicle.",
+    "de": "OBD-II-Code auswerten und Berichte für dein Fahrzeug speichern."
+  },
+  "Analizo problemin": {
+    "sq": "Analizo problemin",
+    "en": "Assess the problem",
+    "de": "Problem einschätzen"
+  },
+  "Anulo": {
+    "sq": "Anulo",
+    "en": "Cancel",
+    "de": "Abbrechen"
+  },
+  "Aplikacioni yt i menaxhimit të servisit.": {
+    "sq": "Aplikacioni yt i menaxhimit të servisit.",
+    "en": "Your vehicle service companion.",
+    "de": "Dein Begleiter für den Fahrzeugservice."
+  },
+  "Asistencë për çdo udhëtim": {
+    "sq": "Asistencë për çdo udhëtim",
+    "en": "Assistance for every journey",
+    "de": "Hilfe auf jeder Fahrt"
+  },
+  "Cakto dhe ndiq vizitat e veturave në servis.": {
+    "sq": "Cakto dhe ndiq vizitat e veturave në servis.",
+    "en": "Plan and track vehicle service visits.",
+    "de": "Werkstattbesuche planen und verfolgen."
+  },
+  "Cakto servis": {
+    "sq": "Cakto servis",
+    "en": "Plan service",
+    "de": "Service planen"
+  },
+  "Cakto servis për këtë problem": {
+    "sq": "Cakto servis për këtë problem",
+    "en": "Plan service for this problem",
+    "de": "Service für dieses Problem planen"
+  },
+  "Cakto termin": {
+    "sq": "Cakto termin",
+    "en": "Create appointment",
+    "de": "Termin anlegen"
+  },
+  "Data dhe ora": {
+    "sq": "Data dhe ora",
+    "en": "Date and time",
+    "de": "Datum und Uhrzeit"
+  },
+  "Diagnostikimi": {
+    "sq": "Diagnostikimi",
+    "en": "OBD assessment",
+    "de": "OBD-Auswertung"
+  },
+  "Diagnostikimi nuk mund të kryhet.": {
+    "sq": "Diagnostikimi nuk mund të kryhet.",
+    "en": "The assessment could not be completed.",
+    "de": "Die Auswertung konnte nicht abgeschlossen werden."
+  },
+  "Dil": {
+    "sq": "Dil",
+    "en": "Log out",
+    "de": "Abmelden"
+  },
+  "Duke analizuar...": {
+    "sq": "Duke analizuar...",
+    "en": "Assessing…",
+    "de": "Wird ausgewertet…"
+  },
+  "Duke krijuar llogarinë...": {
+    "sq": "Duke krijuar llogarinë...",
+    "en": "Creating account…",
+    "de": "Konto wird erstellt…"
+  },
+  "Duke kërkuar...": {
+    "sq": "Duke kërkuar...",
+    "en": "Searching…",
+    "de": "Suche läuft…"
+  },
+  "Duke ngarkuar terminet...": {
+    "sq": "Duke ngarkuar terminet...",
+    "en": "Loading appointments…",
+    "de": "Termine werden geladen…"
+  },
+  "Duke ngarkuar veturat...": {
+    "sq": "Duke ngarkuar veturat...",
+    "en": "Loading vehicles…",
+    "de": "Fahrzeuge werden geladen…"
+  },
+  "Duke ruajtur...": {
+    "sq": "Duke ruajtur...",
+    "en": "Saving…",
+    "de": "Wird gespeichert…"
+  },
+  "Duke u kyçur...": {
+    "sq": "Duke u kyçur...",
+    "en": "Signing in…",
+    "de": "Anmeldung läuft…"
+  },
+  "Dërgo përgjigjet": {
+    "sq": "Dërgo përgjigjet",
+    "en": "Submit answers",
+    "de": "Antworten senden"
+  },
+  "E lartë": {
+    "sq": "E lartë",
+    "en": "High",
+    "de": "Hoch"
+  },
+  "E ulët": {
+    "sq": "E ulët",
+    "en": "Low",
+    "de": "Niedrig"
+  },
+  "Mesatare": {
+    "sq": "Mesatare",
+    "en": "Medium",
+    "de": "Mittel"
+  },
+  "Kritike": {
+    "sq": "Kritike",
+    "en": "Critical",
+    "de": "Kritisch"
+  },
+  "Email": {
+    "sq": "Email",
+    "en": "Email",
+    "de": "E-Mail"
+  },
+  "Email-i ose fjalëkalimi është i pasaktë.": {
+    "sq": "Email-i ose fjalëkalimi është i pasaktë.",
+    "en": "Incorrect email or password.",
+    "de": "E-Mail oder Passwort ist falsch."
+  },
+  "Emri dhe mbiemri": {
+    "sq": "Emri dhe mbiemri",
+    "en": "Full name",
+    "de": "Vor- und Nachname"
+  },
+  "Emri i plotë": {
+    "sq": "Emri i plotë",
+    "en": "Full name",
+    "de": "Vollständiger Name"
+  },
+  "Emri i servisit ose adresa": {
+    "sq": "Emri i servisit ose adresa",
+    "en": "Repair shop name or address",
+    "de": "Werkstattname oder Adresse"
+  },
+  "FILLIM I LEHTË": {
+    "sq": "FILLIM I LEHTË",
+    "en": "GET STARTED",
+    "de": "EINFACH STARTEN"
+  },
+  "Fjalëkalimet nuk përputhen.": {
+    "sq": "Fjalëkalimet nuk përputhen.",
+    "en": "Passwords do not match.",
+    "de": "Die Passwörter stimmen nicht überein."
+  },
+  "Fjalëkalimi": {
+    "sq": "Fjalëkalimi",
+    "en": "Password",
+    "de": "Passwort"
+  },
+  "Fjalëkalimi duhet të ketë së paku 8 karaktere.": {
+    "sq": "Fjalëkalimi duhet të ketë së paku 8 karaktere.",
+    "en": "Use at least 8 characters for the password.",
+    "de": "Das Passwort muss mindestens 8 Zeichen haben."
+  },
+  "Fshih fjalëkalimin": {
+    "sq": "Fshih fjalëkalimin",
+    "en": "Hide password",
+    "de": "Passwort verbergen"
+  },
+  "Fshih konfirmimin e fjalëkalimit": {
+    "sq": "Fshih konfirmimin e fjalëkalimit",
+    "en": "Hide password confirmation",
+    "de": "Passwortbestätigung verbergen"
+  },
+  "Fshij": {
+    "sq": "Fshij",
+    "en": "Delete",
+    "de": "Löschen"
+  },
+  "GARAŽHI YT": {
+    "sq": "GARAŽHI YT",
+    "en": "YOUR GARAGE",
+    "de": "DEINE GARAGE"
+  },
+  "GJETJA E SERVISEVE": {
+    "sq": "GJETJA E SERVISEVE",
+    "en": "FIND REPAIR SHOPS",
+    "de": "WERKSTÄTTEN FINDEN"
+  },
+  "Garazhi": {
+    "sq": "Garazhi",
+    "en": "Garage",
+    "de": "Garage"
+  },
+  "Garazhi është bosh": {
+    "sq": "Garazhi është bosh",
+    "en": "Your garage is empty",
+    "de": "Deine Garage ist leer"
+  },
+  "Gati për ta pasur kujdesin e veturës më të organizuar?": {
+    "sq": "Gati për ta pasur kujdesin e veturës më të organizuar?",
+    "en": "Ready to organise your vehicle care?",
+    "de": "Bereit, die Fahrzeugpflege besser zu organisieren?"
+  },
+  "Gjej mekanikë pa llogari": {
+    "sq": "Gjej mekanikë pa llogari",
+    "en": "Find a mechanic without an account",
+    "de": "Werkstatt ohne Konto finden"
+  },
+  "Gjej mekanikë pranë": {
+    "sq": "Gjej mekanikë pranë",
+    "en": "Find nearby mechanics",
+    "de": "Werkstätten in der Nähe finden"
+  },
+  "Gjej servise pranë": {
+    "sq": "Gjej servise pranë",
+    "en": "Find nearby repair shops",
+    "de": "Werkstätten in der Nähe finden"
+  },
+  "Gjithsej": {
+    "sq": "Gjithsej",
+    "en": "Total",
+    "de": "Gesamt"
+  },
+  "Gjithçka për shërbimet e veturës, në një vend": {
+    "sq": "Gjithçka për shërbimet e veturës, në një vend",
+    "en": "Vehicle assistance in one place",
+    "de": "Fahrzeughilfe an einem Ort"
+  },
+  "Hapi i rekomanduar:": {
+    "sq": "Hapi i rekomanduar:",
+    "en": "Recommended action:",
+    "de": "Empfohlener Schritt:"
+  },
+  "Historiku": {
+    "sq": "Historiku",
+    "en": "History",
+    "de": "Verlauf"
+  },
+  "Historiku dhe statusi i termineve të tua.": {
+    "sq": "Historiku dhe statusi i termineve të tua.",
+    "en": "Your appointment history and status.",
+    "de": "Verlauf und Status deiner Termine."
+  },
+  "Historiku i diagnostikimit nuk është i vlefshëm.": {
+    "sq": "Historiku i diagnostikimit nuk është i vlefshëm.",
+    "en": "The diagnostic history response is invalid.",
+    "de": "Die Antwort zum Diagnoseverlauf ist ungültig."
+  },
+  "Historiku nuk u ngarkua.": {
+    "sq": "Historiku nuk u ngarkua.",
+    "en": "History could not be loaded.",
+    "de": "Der Verlauf konnte nicht geladen werden."
+  },
+  "Jep deri në 5 përgjigje, me maksimum 500 karaktere për secilën.": {
+    "sq": "Jep deri në 5 përgjigje, me maksimum 500 karaktere për secilën.",
+    "en": "Provide up to 5 answers, with at most 500 characters each.",
+    "de": "Gib bis zu 5 Antworten mit jeweils höchstens 500 Zeichen ein."
+  },
+  "Ke arritur kufirin e kërkesave. Provo përsëri më vonë.": {
+    "sq": "Ke arritur kufirin e kërkesave. Provo përsëri më vonë.",
+    "en": "Too many requests. Please try again later.",
+    "de": "Zu viele Anfragen. Bitte später erneut versuchen."
+  },
+  "Ke tashmë llogari?": {
+    "sq": "Ke tashmë llogari?",
+    "en": "Already have an account?",
+    "de": "Du hast bereits ein Konto?"
+  },
+  "Kjo faqe është vetëm për administratorët.": {
+    "sq": "Kjo faqe është vetëm për administratorët.",
+    "en": "This page is for administrators only.",
+    "de": "Diese Seite ist nur für Administratoren."
+  },
+  "Kliko hartën për të zgjedhur zonën ku të kërkohen serviset; shenjat me çelës tregojnë serviset e gjetura.": {
+    "sq": "Kliko hartën për të zgjedhur zonën ku të kërkohen serviset; shenjat me çelës tregojnë serviset e gjetura.",
+    "en": "Click the map to choose a search area. Wrench markers show repair shops.",
+    "de": "Klicke auf die Karte, um ein Suchgebiet zu wählen. Schraubenschlüssel markieren Werkstätten."
+  },
+  "Kodi i defektit *": {
+    "sq": "Kodi i defektit *",
+    "en": "Fault code *",
+    "de": "Fehlercode *"
+  },
+  "Krijo dhe përcill terminet e servisit për secilën veturë.": {
+    "sq": "Krijo dhe përcill terminet e servisit për secilën veturë.",
+    "en": "Create and track service appointments for each vehicle.",
+    "de": "Servicetermine für jedes Fahrzeug anlegen und verfolgen."
+  },
+  "Krijo llogari": {
+    "sq": "Krijo llogari",
+    "en": "Create account",
+    "de": "Konto erstellen"
+  },
+  "Krijo llogarinë tënde": {
+    "sq": "Krijo llogarinë tënde",
+    "en": "Create your account",
+    "de": "Erstelle dein Konto"
+  },
+  "Krijo llogarinë tënde, shto veturën dhe përdor shërbimet sipas nevojës.": {
+    "sq": "Krijo llogarinë tënde, shto veturën dhe përdor shërbimet sipas nevojës.",
+    "en": "Create an account, add your vehicle and use the services you need.",
+    "de": "Konto erstellen, Fahrzeug hinzufügen und passende Dienste nutzen."
+  },
+  "Kujdesi nën kontroll": {
+    "sq": "Kujdesi nën kontroll",
+    "en": "Vehicle care at a glance",
+    "de": "Fahrzeugpflege im Blick"
+  },
+  "Kupto problemet": {
+    "sq": "Kupto problemet",
+    "en": "Understand vehicle problems",
+    "de": "Fahrzeugprobleme verstehen"
+  },
+  "Ky email është regjistruar tashmë.": {
+    "sq": "Ky email është regjistruar tashmë.",
+    "en": "This email is already registered.",
+    "de": "Diese E-Mail ist bereits registriert."
+  },
+  "Kyçja kërkohet": {
+    "sq": "Kyçja kërkohet",
+    "en": "Sign in required",
+    "de": "Anmeldung erforderlich"
+  },
+  "Kyçu": {
+    "sq": "Kyçu",
+    "en": "Log in",
+    "de": "Anmelden"
+  },
+  "Kyçu në llogarinë tënde": {
+    "sq": "Kyçu në llogarinë tënde",
+    "en": "Log in to your account",
+    "de": "Melde dich in deinem Konto an"
+  },
+  "Kyçu për veturat dhe historikun. Rezervimi direkt kërkon partner të verifikuar.": {
+    "sq": "Kyçu për veturat dhe historikun. Rezervimi direkt kërkon partner të verifikuar.",
+    "en": "Sign in for vehicles and history. Direct booking requires a verified partner.",
+    "de": "Für Fahrzeuge und Verlauf anmelden. Direktbuchungen erfordern einen verifizierten Partner."
+  },
+  "Kërko në Google Maps": {
+    "sq": "Kërko në Google Maps",
+    "en": "Search Google Maps",
+    "de": "In Google Maps suchen"
+  },
+  "Kërko në hartë": {
+    "sq": "Kërko në hartë",
+    "en": "Search the map",
+    "de": "Auf der Karte suchen"
+  },
+  "Kërko përsëri": {
+    "sq": "Kërko përsëri",
+    "en": "Search again",
+    "de": "Erneut suchen"
+  },
+  "Kërko servise dhe përkthe simptomat pa llogari. Kyçu për veturat, terminet dhe historikun.": {
+    "sq": "Kërko servise dhe përkthe simptomat pa llogari. Kyçu për veturat, terminet dhe historikun.",
+    "en": "Find repair shops and translate symptoms without an account. Sign in for vehicles, appointments and history.",
+    "de": "Werkstätten suchen und Symptome ohne Konto übersetzen. Für Fahrzeuge, Termine und Verlauf anmelden."
+  },
+  "Kërko servise të shënuara në OpenStreetMap, vetëm kur zgjedh të ndash lokacionin.": {
+    "sq": "Kërko servise të shënuara në OpenStreetMap, vetëm kur zgjedh të ndash lokacionin.",
+    "en": "Find repair shops on OpenStreetMap at a location you choose.",
+    "de": "Finde Werkstätten auf OpenStreetMap an einem Ort deiner Wahl."
+  },
+  "Këshillë sigurie": {
+    "sq": "Këshillë sigurie",
+    "en": "Safety advice",
+    "de": "Sicherheitshinweis"
+  },
+  "Leja për vendndodhje u refuzua. Lejoje në cilësimet e shfletuesit dhe provo përsëri.": {
+    "sq": "Leja për vendndodhje u refuzua. Lejoje në cilësimet e shfletuesit dhe provo përsëri.",
+    "en": "Location permission was denied. Search manually or allow location in browser settings.",
+    "de": "Standortzugriff verweigert. Suche manuell oder erlaube den Standort in den Browsereinstellungen."
+  },
+  "Lexim demonstrues": {
+    "sq": "Lexim demonstrues",
+    "en": "Simulated reading",
+    "de": "Simulierter Messwert"
+  },
+  "Leximi aktual është simulim i vlerave që i fut ti; nuk lidhet me adapter fizik OBD-II. Analiza nuk zëvendëson kontrollin e mekanikut.": {
+    "sq": "Leximi aktual është simulim i vlerave që i fut ti; nuk lidhet me adapter fizik OBD-II. Analiza nuk zëvendëson kontrollin e mekanikut.",
+    "en": "Values are entered manually; no physical OBD-II adapter is connected. This assessment does not replace a mechanic's inspection.",
+    "de": "Werte werden manuell eingegeben; kein physischer OBD-II-Adapter ist verbunden. Die Auswertung ersetzt keine Werkstattprüfung."
+  },
+  "Lexo kodin OBD-II": {
+    "sq": "Lexo kodin OBD-II",
+    "en": "Review an OBD-II code",
+    "de": "OBD-II-Code auswerten"
+  },
+  "Lista e veturave nuk është e vlefshme.": {
+    "sq": "Lista e veturave nuk është e vlefshme.",
+    "en": "The vehicle list is invalid.",
+    "de": "Die Fahrzeugliste ist ungültig."
+  },
+  "Llogaria mund të jetë krijuar, por kyçja dështoi. Provo të kyçesh me kredencialet e tua.": {
+    "sq": "Llogaria mund të jetë krijuar, por kyçja dështoi. Provo të kyçesh me kredencialet e tua.",
+    "en": "Your account may have been created, but login failed. Try signing in with your credentials.",
+    "de": "Dein Konto wurde möglicherweise erstellt, aber die Anmeldung ist fehlgeschlagen. Versuche dich mit deinen Zugangsdaten anzumelden."
+  },
+  "MECHANICAPP · KUJDESI PËR VETURËN TËNDE": {
+    "sq": "MECHANICAPP · KUJDESI PËR VETURËN TËNDE",
+    "en": "MECHANICAPP · VEHICLE ASSISTANCE",
+    "de": "MECHANICAPP · FAHRZEUGHILFE"
+  },
+  "MIRË SE U KTHEVE": {
+    "sq": "MIRË SE U KTHEVE",
+    "en": "WELCOME BACK",
+    "de": "WILLKOMMEN ZURÜCK"
+  },
+  "Marka": {
+    "sq": "Marka",
+    "en": "Make",
+    "de": "Marke"
+  },
+  "Mbaji të dhënat e veturave në një vend dhe gjej shpejt informacionin që të duhet.": {
+    "sq": "Mbaji të dhënat e veturave në një vend dhe gjej shpejt informacionin që të duhet.",
+    "en": "Keep vehicle details together and find what you need quickly.",
+    "de": "Fahrzeugdaten an einem Ort speichern und schnell wiederfinden."
+  },
+  "Mbaji të gjitha të dhënat e veturave në një vend.": {
+    "sq": "Mbaji të gjitha të dhënat e veturave në një vend.",
+    "en": "Keep all your vehicle details in one place.",
+    "de": "Alle Fahrzeugdaten an einem Ort."
+  },
+  "MechanicApp ·": {
+    "sq": "MechanicApp ·",
+    "en": "MechanicApp ·",
+    "de": "MechanicApp ·"
+  },
+  "MechanicApp, faqja kryesore": {
+    "sq": "MechanicApp, faqja kryesore",
+    "en": "MechanicApp home",
+    "de": "MechanicApp Startseite"
+  },
+  "Mekanika pranë teje": {
+    "sq": "Mekanika pranë teje",
+    "en": "Mechanics near you",
+    "de": "Werkstätten in deiner Nähe"
+  },
+  "Mekanikë pranë": {
+    "sq": "Mekanikë pranë",
+    "en": "Nearby mechanics",
+    "de": "Werkstätten in der Nähe"
+  },
+  "Menaxhimi i servisit, më i thjeshtë.": {
+    "sq": "Menaxhimi i servisit, më i thjeshtë.",
+    "en": "Vehicle care made simpler.",
+    "de": "Fahrzeugpflege leicht gemacht."
+  },
+  "Menaxho veturat": {
+    "sq": "Menaxho veturat",
+    "en": "Manage vehicles",
+    "de": "Fahrzeuge verwalten"
+  },
+  "Menaxho veturat dhe terminet e servisit, thjesht dhe sigurt.": {
+    "sq": "Menaxho veturat dhe terminet e servisit, thjesht dhe sigurt.",
+    "en": "Manage vehicles and service appointments simply and securely.",
+    "de": "Fahrzeuge und Servicetermine einfach und sicher verwalten."
+  },
+  "Menaxho veturat dhe terminet, kupto më mirë sinjalet e veturës dhe gjej servise pranë teje — në një vend të vetëm.": {
+    "sq": "Menaxho veturat dhe terminet, kupto më mirë sinjalet e veturës dhe gjej servise pranë teje — në një vend të vetëm.",
+    "en": "Manage vehicles and appointments, understand warning signs and find repair shops nearby, all in one place.",
+    "de": "Verwalte Fahrzeuge und Termine, verstehe Warnsignale und finde Werkstätten in der Nähe – alles an einem Ort."
+  },
+  "Mirëmbaje çdo udhëtim.": {
+    "sq": "Mirëmbaje çdo udhëtim.",
+    "en": "Take care of every journey.",
+    "de": "Gut vorbereitet auf jede Fahrt."
+  },
+  "Mirëmbajtja e veturës, më e thjeshtë.": {
+    "sq": "Mirëmbajtja e veturës, më e thjeshtë.",
+    "en": "Vehicle care made simpler.",
+    "de": "Fahrzeugpflege leicht gemacht."
+  },
+  "Modeli": {
+    "sq": "Modeli",
+    "en": "Model",
+    "de": "Modell"
+  },
+  "Na duhen disa hollësi para analizës": {
+    "sq": "Na duhen disa hollësi para analizës",
+    "en": "We need a few details first",
+    "de": "Wir benötigen zunächst einige Angaben"
+  },
+  "Navigimi kryesor": {
+    "sq": "Navigimi kryesor",
+    "en": "Main navigation",
+    "de": "Hauptnavigation"
+  },
+  "Navigimi publik": {
+    "sq": "Navigimi publik",
+    "en": "Public navigation",
+    "de": "Öffentliche Navigation"
+  },
+  "Ndryshimet e statusit ruhen menjëherë.": {
+    "sq": "Ndryshimet e statusit ruhen menjëherë.",
+    "en": "Status changes are saved immediately.",
+    "de": "Statusänderungen werden sofort gespeichert."
+  },
+  "Ndrysho": {
+    "sq": "Ndrysho",
+    "en": "Edit",
+    "de": "Bearbeiten"
+  },
+  "Ndrysho statusin": {
+    "sq": "Ndrysho statusin",
+    "en": "Change status",
+    "de": "Status ändern"
+  },
+  "Ndrysho termin": {
+    "sq": "Ndrysho termin",
+    "en": "Edit appointment",
+    "de": "Termin bearbeiten"
+  },
+  "Nuk ka raporte ende": {
+    "sq": "Nuk ka raporte ende",
+    "en": "No reports yet",
+    "de": "Noch keine Berichte"
+  },
+  "Nuk ka termine për momentin": {
+    "sq": "Nuk ka termine për momentin",
+    "en": "No appointments at the moment",
+    "de": "Derzeit keine Termine"
+  },
+  "Nuk ke ende llogari?": {
+    "sq": "Nuk ke ende llogari?",
+    "en": "No account yet?",
+    "de": "Noch kein Konto?"
+  },
+  "Nuk ke termine të planifikuara": {
+    "sq": "Nuk ke termine të planifikuara",
+    "en": "No planned appointments",
+    "de": "Keine geplanten Termine"
+  },
+  "Nuk mund të fshihet termini.": {
+    "sq": "Nuk mund të fshihet termini.",
+    "en": "Could not delete the appointment.",
+    "de": "Termin konnte nicht gelöscht werden."
+  },
+  "Nuk mund të fshihet vetura.": {
+    "sq": "Nuk mund të fshihet vetura.",
+    "en": "Could not delete the vehicle.",
+    "de": "Fahrzeug konnte nicht gelöscht werden."
+  },
+  "Nuk mund të lidhemi me backend-in.": {
+    "sq": "Nuk mund të lidhemi me backend-in.",
+    "en": "The service could not be reached.",
+    "de": "Der Dienst ist nicht erreichbar."
+  },
+  "Nuk mund të lidhemi me shërbimin. Kontrollo lidhjen dhe provo përsëri.": {
+    "sq": "Nuk mund të lidhemi me shërbimin. Kontrollo lidhjen dhe provo përsëri.",
+    "en": "Cannot reach the service. Check your connection and try again.",
+    "de": "Dienst nicht erreichbar. Prüfe deine Verbindung und versuche es erneut."
+  },
+  "Nuk mund të ngarkohen terminet.": {
+    "sq": "Nuk mund të ngarkohen terminet.",
+    "en": "Could not load appointments.",
+    "de": "Termine konnten nicht geladen werden."
+  },
+  "Nuk mund të ngarkohen veturat.": {
+    "sq": "Nuk mund të ngarkohen veturat.",
+    "en": "Could not load vehicles.",
+    "de": "Fahrzeuge konnten nicht geladen werden."
+  },
+  "Nuk mund të përditësohet statusi.": {
+    "sq": "Nuk mund të përditësohet statusi.",
+    "en": "Could not update the status.",
+    "de": "Status konnte nicht aktualisiert werden."
+  },
+  "Nuk mund të ruhet termini.": {
+    "sq": "Nuk mund të ruhet termini.",
+    "en": "Could not save the appointment.",
+    "de": "Termin konnte nicht gespeichert werden."
+  },
+  "Nuk mund të ruhet vetura.": {
+    "sq": "Nuk mund të ruhet vetura.",
+    "en": "Could not save the vehicle.",
+    "de": "Fahrzeug konnte nicht gespeichert werden."
+  },
+  "Nuk u gjet ky vend. Provo me një emër tjetër ose shtyp pikën në hartë.": {
+    "sq": "Nuk u gjet ky vend. Provo me një emër tjetër ose shtyp pikën në hartë.",
+    "en": "Place not found. Try another name or select a point on the map.",
+    "de": "Ort nicht gefunden. Versuche einen anderen Namen oder wähle einen Punkt auf der Karte."
+  },
+  "Nuk u gjetën servise të regjistruara në OpenStreetMap brenda 5 km.": {
+    "sq": "Nuk u gjetën servise të regjistruara në OpenStreetMap brenda 5 km.",
+    "en": "No repair shops were found in OpenStreetMap within 5 km.",
+    "de": "In OpenStreetMap wurden im Umkreis von 5 km keine Werkstätten gefunden."
+  },
+  "OBD-II · HISTORIKU I VETURËS": {
+    "sq": "OBD-II · HISTORIKU I VETURËS",
+    "en": "OBD-II · VEHICLE HISTORY",
+    "de": "OBD-II · FAHRZEUGVERLAUF"
+  },
+  "OpenStreetMap": {
+    "sq": "OpenStreetMap",
+    "en": "OpenStreetMap",
+    "de": "OpenStreetMap"
+  },
+  "Orari nuk është dhënë": {
+    "sq": "Orari nuk është dhënë",
+    "en": "Opening hours unavailable",
+    "de": "Öffnungszeiten nicht verfügbar"
+  },
+  "Organizo terminet": {
+    "sq": "Organizo terminet",
+    "en": "Organise appointments",
+    "de": "Termine organisieren"
+  },
+  "PANELI I SERVISIT": {
+    "sq": "PANELI I SERVISIT",
+    "en": "SERVICE DASHBOARD",
+    "de": "SERVICEÜBERSICHT"
+  },
+  "PLANIFIKO SERVISIN": {
+    "sq": "PLANIFIKO SERVISIN",
+    "en": "PLAN YOUR SERVICE",
+    "de": "SERVICE PLANEN"
+  },
+  "Pa emër në OpenStreetMap": {
+    "sq": "Pa emër në OpenStreetMap",
+    "en": "Unnamed in OpenStreetMap",
+    "de": "In OpenStreetMap ohne Namen"
+  },
+  "Pamja e hartës": {
+    "sq": "Pamja e hartës",
+    "en": "Map view",
+    "de": "Kartenansicht"
+  },
+  "Pika e kërkimit": {
+    "sq": "Pika e kërkimit",
+    "en": "Search location",
+    "de": "Suchpunkt"
+  },
+  "Pika e zgjedhur për kërkim": {
+    "sq": "Pika e zgjedhur për kërkim",
+    "en": "Selected search location",
+    "de": "Ausgewählter Suchpunkt"
+  },
+  "Plotëso të dhënat e veturës.": {
+    "sq": "Plotëso të dhënat e veturës.",
+    "en": "Enter vehicle details.",
+    "de": "Fahrzeugdaten eingeben."
+  },
+  "Plotëso vlerat që i ke; fusha e sensorëve janë opsionale.": {
+    "sq": "Plotëso vlerat që i ke; fusha e sensorëve janë opsionale.",
+    "en": "Enter the values you have; sensor values are optional.",
+    "de": "Gib die vorhandenen Werte ein; Sensorwerte sind optional."
+  },
+  "Provoje pas regjistrimit": {
+    "sq": "Provoje pas regjistrimit",
+    "en": "Try after registration",
+    "de": "Nach der Registrierung nutzen"
+  },
+  "Pyetje sqaruese ose vlerësim paraprak me këshilla sigurie.": {
+    "sq": "Pyetje sqaruese ose vlerësim paraprak me këshilla sigurie.",
+    "en": "Follow-up questions or initial guidance with safety advice.",
+    "de": "Rückfragen oder erste Einschätzung mit Sicherheitshinweisen."
+  },
+  "Përditëso veturën": {
+    "sq": "Përditëso veturën",
+    "en": "Update vehicle",
+    "de": "Fahrzeug aktualisieren"
+  },
+  "Përdor vendndodhjen": {
+    "sq": "Përdor vendndodhjen",
+    "en": "Use my location",
+    "de": "Meinen Standort verwenden"
+  },
+  "Përgjigjet e tua (shkruaj nga një në rresht)": {
+    "sq": "Përgjigjet e tua (shkruaj nga një në rresht)",
+    "en": "Your answers (one per line)",
+    "de": "Deine Antworten (eine pro Zeile)"
+  },
+  "Përgjigjja e serverit nuk përmban të dhënat e hyrjes.": {
+    "sq": "Përgjigjja e serverit nuk përmban të dhënat e hyrjes.",
+    "en": "The server response is missing login details.",
+    "de": "Die Serverantwort enthält keine Anmeldedaten."
+  },
+  "Përgjigjja e serverit për terminet nuk është e vlefshme.": {
+    "sq": "Përgjigjja e serverit për terminet nuk është e vlefshme.",
+    "en": "The appointment response is invalid.",
+    "de": "Die Terminantwort ist ungültig."
+  },
+  "Përgjigjja e serverit për veturat nuk është e vlefshme.": {
+    "sq": "Përgjigjja e serverit për veturat nuk është e vlefshme.",
+    "en": "The vehicle response is invalid.",
+    "de": "Die Fahrzeugantwort ist ungültig."
+  },
+  "Përgjigjja e serviseve nuk është e vlefshme.": {
+    "sq": "Përgjigjja e serviseve nuk është e vlefshme.",
+    "en": "The repair shop response is invalid.",
+    "de": "Die Werkstattantwort ist ungültig."
+  },
+  "Përgjigjja e vendeve nuk është e vlefshme.": {
+    "sq": "Përgjigjja e vendeve nuk është e vlefshme.",
+    "en": "The location response is invalid.",
+    "de": "Die Ortsantwort ist ungültig."
+  },
+  "Përgjigju pyetjeve që mundesh...": {
+    "sq": "Përgjigju pyetjeve që mundesh...",
+    "en": "Answer the questions you can…",
+    "de": "Beantworte die Fragen, soweit möglich…"
+  },
+  "Përgjigju të paktën njërës nga pyetjet para se të vazhdosh.": {
+    "sq": "Përgjigju të paktën njërës nga pyetjet para se të vazhdosh.",
+    "en": "Answer at least one question before continuing.",
+    "de": "Beantworte mindestens eine Frage, bevor du fortfährst."
+  },
+  "Përkthe simptomat për mekanikun. AI jep orientim, jo diagnozë përfundimtare.": {
+    "sq": "Përkthe simptomat për mekanikun. AI jep orientim, jo diagnozë përfundimtare.",
+    "en": "Translate symptoms for the mechanic. AI provides guidance, not a final diagnosis.",
+    "de": "Übersetze Symptome für die Werkstatt. KI bietet Orientierung, keine endgültige Diagnose."
+  },
+  "Përshkruaj simptomat ose analizo një kod OBD-II për udhëzime paraprake.": {
+    "sq": "Përshkruaj simptomat ose analizo një kod OBD-II për udhëzime paraprake.",
+    "en": "Describe symptoms or review an OBD-II code for initial guidance.",
+    "de": "Beschreibe Symptome oder werte einen OBD-II-Code für erste Hinweise aus."
+  },
+  "Përshkruaj simptomat, kur shfaqen dhe çdo sinjal paralajmërues.": {
+    "sq": "Përshkruaj simptomat, kur shfaqen dhe çdo sinjal paralajmërues.",
+    "en": "Describe symptoms, when they occur and any warning signs.",
+    "de": "Beschreibe Symptome, ihr Auftreten und mögliche Warnzeichen."
+  },
+  "Përshkruaj çfarë vëren te vetura...": {
+    "sq": "Përshkruaj çfarë vëren te vetura...",
+    "en": "Describe what you notice about the vehicle…",
+    "de": "Beschreibe deine Beobachtungen am Fahrzeug…"
+  },
+  "Përshkruaje problemin dhe merr udhëzime për hapat e ardhshëm.": {
+    "sq": "Përshkruaje problemin dhe merr udhëzime për hapat e ardhshëm.",
+    "en": "Describe the problem and get guidance on next steps.",
+    "de": "Beschreibe das Problem und erhalte Hinweise für die nächsten Schritte."
+  },
+  "Përsërit fjalëkalimin": {
+    "sq": "Përsërit fjalëkalimin",
+    "en": "Repeat password",
+    "de": "Passwort wiederholen"
+  },
+  "RPM": {
+    "sq": "RPM",
+    "en": "RPM",
+    "de": "U/min"
+  },
+  "Raportet ruhen për llogarinë tënde.": {
+    "sq": "Raportet ruhen për llogarinë tënde.",
+    "en": "Reports are saved to your account.",
+    "de": "Berichte werden in deinem Konto gespeichert."
+  },
+  "Regjistrohu për të menaxhuar veturat dhe terminet.": {
+    "sq": "Regjistrohu për të menaxhuar veturat dhe terminet.",
+    "en": "Register to manage vehicles and appointments.",
+    "de": "Registriere dich, um Fahrzeuge und Termine zu verwalten."
+  },
+  "Regjistrohu": {
+    "sq": "Regjistrohu",
+    "en": "Register",
+    "de": "Registrieren"
+  },
+  "Rezultatet në hartën tonë vijnë nga OpenStreetMap dhe mund të jenë jo të plota. Për më shumë rezultate, kërko edhe në Google Maps.": {
+    "sq": "Rezultatet në hartën tonë vijnë nga OpenStreetMap dhe mund të jenë jo të plota. Për më shumë rezultate, kërko edhe në Google Maps.",
+    "en": "Map results come from OpenStreetMap and may be incomplete. You can also search Google Maps.",
+    "de": "Die Kartenergebnisse stammen aus OpenStreetMap und können unvollständig sein. Du kannst auch in Google Maps suchen."
+  },
+  "Rezultati i analizës": {
+    "sq": "Rezultati i analizës",
+    "en": "Assessment result",
+    "de": "Ergebnis der Einschätzung"
+  },
+  "Rifresko": {
+    "sq": "Rifresko",
+    "en": "Refresh",
+    "de": "Aktualisieren"
+  },
+  "Rrugët": {
+    "sq": "Rrugët",
+    "en": "Streets",
+    "de": "Straßen"
+  },
+  "Ruaj ndryshimet": {
+    "sq": "Ruaj ndryshimet",
+    "en": "Save changes",
+    "de": "Änderungen speichern"
+  },
+  "SERVISI YT, NË NJË VEND": {
+    "sq": "SERVISI YT, NË NJË VEND",
+    "en": "YOUR SERVICE IN ONE PLACE",
+    "de": "DEIN SERVICE AN EINEM ORT"
+  },
+  "Satelit": {
+    "sq": "Satelit",
+    "en": "Satellite",
+    "de": "Satellit"
+  },
+  "Serveri pati një gabim të brendshëm. Provo përsëri më vonë.": {
+    "sq": "Serveri pati një gabim të brendshëm. Provo përsëri më vonë.",
+    "en": "The server encountered an error. Please try again later.",
+    "de": "Ein Serverfehler ist aufgetreten. Bitte später erneut versuchen."
+  },
+  "Servis i gjetur": {
+    "sq": "Servis i gjetur",
+    "en": "Repair shop found",
+    "de": "Gefundene Werkstatt"
+  },
+  "Servis pa emër në OpenStreetMap": {
+    "sq": "Servis pa emër në OpenStreetMap",
+    "en": "Unnamed OpenStreetMap repair shop",
+    "de": "Unbenannte Werkstatt in OpenStreetMap"
+  },
+  "Servis publik · Kontakto direkt për termin": {
+    "sq": "Servis publik · Kontakto direkt për termin",
+    "en": "Public listing · Contact directly for appointments",
+    "de": "Öffentlicher Eintrag · Termine direkt vereinbaren"
+  },
+  "Serviset e gjetura": {
+    "sq": "Serviset e gjetura",
+    "en": "Repair shops found",
+    "de": "Gefundene Werkstätten"
+  },
+  "Serviset nuk mund të ngarkohen.": {
+    "sq": "Serviset nuk mund të ngarkohen.",
+    "en": "Repair shops could not be loaded.",
+    "de": "Werkstätten konnten nicht geladen werden."
+  },
+  "Serviset shënohen me ikonën 🔧. Të dhënat e bizneseve: OpenStreetMap contributors, licencë ODbL. Konfirmo detajet direkt me servisin para vizitës.": {
+    "sq": "Serviset shënohen me ikonën 🔧. Të dhënat e bizneseve: OpenStreetMap contributors, licencë ODbL. Konfirmo detajet direkt me servisin para vizitës.",
+    "en": "Repair shops use the 🔧 marker. Business data: OpenStreetMap contributors, ODbL licence. Confirm details with the repair shop before visiting.",
+    "de": "Werkstätten sind mit 🔧 markiert. Geschäftsdaten: OpenStreetMap-Mitwirkende, ODbL-Lizenz. Bestätige die Angaben vor dem Besuch direkt bei der Werkstatt."
+  },
+  "Sesioni ka skaduar. Hyr përsëri.": {
+    "sq": "Sesioni ka skaduar. Hyr përsëri.",
+    "en": "Your session has expired. Sign in again.",
+    "de": "Deine Sitzung ist abgelaufen. Bitte erneut anmelden."
+  },
+  "Shenjat në hartë": {
+    "sq": "Shenjat në hartë",
+    "en": "Map markers",
+    "de": "Kartenmarkierungen"
+  },
+  "Shfaq fjalëkalimin": {
+    "sq": "Shfaq fjalëkalimin",
+    "en": "Show password",
+    "de": "Passwort anzeigen"
+  },
+  "Shfaq konfirmimin e fjalëkalimit": {
+    "sq": "Shfaq konfirmimin e fjalëkalimit",
+    "en": "Show password confirmation",
+    "de": "Passwortbestätigung anzeigen"
+  },
+  "Shfletuesi nuk e mbështet gjeolokacionin. Provo një shfletues tjetër.": {
+    "sq": "Shfletuesi nuk e mbështet gjeolokacionin. Provo një shfletues tjetër.",
+    "en": "Location is not supported. Search by place or select a point on the map.",
+    "de": "Standortfunktion nicht unterstützt. Suche nach einem Ort oder wähle einen Kartenpunkt."
+  },
+  "Shiko kontaktet dhe udhëzimet. Të dhënat publike mund të jenë të paplota.": {
+    "sq": "Shiko kontaktet dhe udhëzimet. Të dhënat publike mund të jenë të paplota.",
+    "en": "View contact details and directions. Public data may be incomplete.",
+    "de": "Kontaktdaten und Wegbeschreibung ansehen. Öffentliche Daten können unvollständig sein."
+  },
+  "Shiko në OpenStreetMap": {
+    "sq": "Shiko në OpenStreetMap",
+    "en": "View in OpenStreetMap",
+    "de": "In OpenStreetMap ansehen"
+  },
+  "Shiko në hartë": {
+    "sq": "Shiko në hartë",
+    "en": "Show on map",
+    "de": "Auf Karte anzeigen"
+  },
+  "Shiko shërbimet": {
+    "sq": "Shiko shërbimet",
+    "en": "Explore services",
+    "de": "Dienste entdecken"
+  },
+  "Shiko terminet dhe përditëso ecurinë e servisit.": {
+    "sq": "Shiko terminet dhe përditëso ecurinë e servisit.",
+    "en": "View appointments and update service progress.",
+    "de": "Termine ansehen und Servicestatus aktualisieren."
+  },
+  "Shiko çfarë ofron MechanicApp. Për t'i ruajtur të dhënat dhe për të vazhduar me shërbimet, kyçu ose krijo llogari.": {
+    "sq": "Shiko çfarë ofron MechanicApp. Për t'i ruajtur të dhënat dhe për të vazhduar me shërbimet, kyçu ose krijo llogari.",
+    "en": "Explore MechanicApp. Sign in or create an account to save your personal data.",
+    "de": "Entdecke MechanicApp. Melde dich an oder erstelle ein Konto, um persönliche Daten zu speichern."
+  },
+  "Shkaqe të mundshme": {
+    "sq": "Shkaqe të mundshme",
+    "en": "Possible causes",
+    "de": "Mögliche Ursachen"
+  },
+  "Shkruaj emrin e servisit ose adresën dhe zgjidh vendin për kërkim, ose kliko pikën në hartë. Mund ta përdorësh edhe vendndodhjen tënde. Kërkimi dërgohet te OpenStreetMap. Rezultatet ruhen përkohësisht në cache; pika e zgjedhur ruhet në këtë skedë për një orë.": {
+    "sq": "Shkruaj emrin e servisit ose adresën dhe zgjidh vendin për kërkim, ose kliko pikën në hartë. Mund ta përdorësh edhe vendndodhjen tënde. Kërkimi dërgohet te OpenStreetMap. Rezultatet ruhen përkohësisht në cache; pika e zgjedhur ruhet në këtë skedë për një orë.",
+    "en": "Enter a repair shop or address, select a place, or click the map. You can also use your location. Searches go to OpenStreetMap. Results are cached temporarily; the selected point stays in this tab for one hour.",
+    "de": "Gib eine Werkstatt oder Adresse ein, wähle einen Ort oder klicke auf die Karte. Du kannst auch deinen Standort nutzen. Anfragen gehen an OpenStreetMap. Ergebnisse werden zwischengespeichert; der ausgewählte Punkt bleibt eine Stunde in diesem Tab."
+  },
+  "Shkruaj fjalëkalimin": {
+    "sq": "Shkruaj fjalëkalimin",
+    "en": "Enter password",
+    "de": "Passwort eingeben"
+  },
+  "Shkruaj përsëri fjalëkalimin": {
+    "sq": "Shkruaj përsëri fjalëkalimin",
+    "en": "Enter password again",
+    "de": "Passwort erneut eingeben"
+  },
+  "Shkruaj të dhënat për të vazhduar.": {
+    "sq": "Shkruaj të dhënat për të vazhduar.",
+    "en": "Enter your details to continue.",
+    "de": "Gib deine Daten ein, um fortzufahren."
+  },
+  "Shkruaj të paktën 2 shkronja për vendin që po kërkon.": {
+    "sq": "Shkruaj të paktën 2 shkronja për vendin që po kërkon.",
+    "en": "Enter at least 2 characters for the place.",
+    "de": "Gib mindestens 2 Zeichen für den Ort ein."
+  },
+  "Shto një veturë para se të nisësh diagnostikimin.": {
+    "sq": "Shto një veturë para se të nisësh diagnostikimin.",
+    "en": "Add a vehicle before starting an assessment.",
+    "de": "Füge vor der Auswertung ein Fahrzeug hinzu."
+  },
+  "Shto së pari një veturë që asistenti të marrë parasysh modelin e saj.": {
+    "sq": "Shto së pari një veturë që asistenti të marrë parasysh modelin e saj.",
+    "en": "Add a vehicle so the assistant can use its model details.",
+    "de": "Füge ein Fahrzeug hinzu, damit der Assistent dessen Modelldaten berücksichtigen kann."
+  },
+  "Shto së pari një veturë që të mund të caktosh termin.": {
+    "sq": "Shto së pari një veturë që të mund të caktosh termin.",
+    "en": "Add a vehicle before creating an appointment.",
+    "de": "Füge ein Fahrzeug hinzu, bevor du einen Termin anlegst."
+  },
+  "Shto veturë": {
+    "sq": "Shto veturë",
+    "en": "Add vehicle",
+    "de": "Fahrzeug hinzufügen"
+  },
+  "Shto veturën": {
+    "sq": "Shto veturën",
+    "en": "Add vehicle",
+    "de": "Fahrzeug hinzufügen"
+  },
+  "Shto veturën e parë për të filluar.": {
+    "sq": "Shto veturën e parë për të filluar.",
+    "en": "Add your first vehicle to get started.",
+    "de": "Füge dein erstes Fahrzeug hinzu, um zu beginnen."
+  },
+  "Shërbimet": {
+    "sq": "Shërbimet",
+    "en": "Services",
+    "de": "Dienste"
+  },
+  "Shërbimi": {
+    "sq": "Shërbimi",
+    "en": "Service",
+    "de": "Service"
+  },
+  "Si funksionon": {
+    "sq": "Si funksionon",
+    "en": "How it works",
+    "de": "So funktioniert es"
+  },
+  "Simptomat": {
+    "sq": "Simptomat",
+    "en": "Symptoms",
+    "de": "Symptome"
+  },
+  "Simptomat (opsionale)": {
+    "sq": "Simptomat (opsionale)",
+    "en": "Symptoms (optional)",
+    "de": "Symptome (optional)"
+  },
+  "Simptomat:": {
+    "sq": "Simptomat:",
+    "en": "Symptoms:",
+    "de": "Symptome:"
+  },
+  "Statusi": {
+    "sq": "Statusi",
+    "en": "Status",
+    "de": "Status"
+  },
+  "Statusi u përditësua.": {
+    "sq": "Statusi u përditësua.",
+    "en": "Status updated.",
+    "de": "Status aktualisiert."
+  },
+  "Së paku 8 karaktere": {
+    "sq": "Së paku 8 karaktere",
+    "en": "At least 8 characters",
+    "de": "Mindestens 8 Zeichen"
+  },
+  "Targat": {
+    "sq": "Targat",
+    "en": "Licence plate",
+    "de": "Kennzeichen"
+  },
+  "Telefoni nuk është dhënë": {
+    "sq": "Telefoni nuk është dhënë",
+    "en": "Phone unavailable",
+    "de": "Telefonnummer nicht verfügbar"
+  },
+  "Temperatura °C": {
+    "sq": "Temperatura °C",
+    "en": "Temperature °C",
+    "de": "Temperatur °C"
+  },
+  "Tensioni V": {
+    "sq": "Tensioni V",
+    "en": "Voltage V",
+    "de": "Spannung V"
+  },
+  "Terminet e klientëve do të shfaqen këtu.": {
+    "sq": "Terminet e klientëve do të shfaqen këtu.",
+    "en": "Customer appointments will appear here.",
+    "de": "Kundentermine erscheinen hier."
+  },
+  "Terminet e mia": {
+    "sq": "Terminet e mia",
+    "en": "My appointments",
+    "de": "Meine Termine"
+  },
+  "Terminet e planifikuara": {
+    "sq": "Terminet e planifikuara",
+    "en": "Planned appointments",
+    "de": "Geplante Termine"
+  },
+  "Terminet këtu janë planifikim personal; nuk konfirmojnë rezervim te një servis i jashtëm. Kontakto servisin për konfirmim.": {
+    "sq": "Terminet këtu janë planifikim personal; nuk konfirmojnë rezervim te një servis i jashtëm. Kontakto servisin për konfirmim.",
+    "en": "These appointments are personal plans; they do not confirm a booking with an external repair shop. Contact the shop for confirmation.",
+    "de": "Diese Termine dienen deiner Planung; sie bestätigen keine Buchung bei einer externen Werkstatt. Kontaktiere die Werkstatt zur Bestätigung."
+  },
+  "Termini": {
+    "sq": "Termini",
+    "en": "Appointment",
+    "de": "Termin"
+  },
+  "Termini i ri do të shfaqet këtu.": {
+    "sq": "Termini i ri do të shfaqet këtu.",
+    "en": "Your new appointment will appear here.",
+    "de": "Dein neuer Termin erscheint hier."
+  },
+  "Termini u fshi.": {
+    "sq": "Termini u fshi.",
+    "en": "Appointment deleted.",
+    "de": "Termin gelöscht."
+  },
+  "Termini u krijua.": {
+    "sq": "Termini u krijua.",
+    "en": "Appointment created.",
+    "de": "Termin erstellt."
+  },
+  "Termini u përditësua.": {
+    "sq": "Termini u përditësua.",
+    "en": "Appointment updated.",
+    "de": "Termin aktualisiert."
+  },
+  "Ti je këtu": {
+    "sq": "Ti je këtu",
+    "en": "You are here",
+    "de": "Du bist hier"
+  },
+  "Të gjitha terminet": {
+    "sq": "Të gjitha terminet",
+    "en": "All appointments",
+    "de": "Alle Termine"
+  },
+  "Udhëzime": {
+    "sq": "Udhëzime",
+    "en": "Directions",
+    "de": "Wegbeschreibung"
+  },
+  "Uebfaqja": {
+    "sq": "Uebfaqja",
+    "en": "Website",
+    "de": "Website"
+  },
+  "Uebfaqja nuk është dhënë": {
+    "sq": "Uebfaqja nuk është dhënë",
+    "en": "Website unavailable",
+    "de": "Website nicht verfügbar"
+  },
+  "VLERËSIMI I ASISTENTIT": {
+    "sq": "VLERËSIMI I ASISTENTIT",
+    "en": "ASSISTANT ASSESSMENT",
+    "de": "EINSCHÄTZUNG DES ASSISTENTEN"
+  },
+  "Vendi nuk mund të kërkohet.": {
+    "sq": "Vendi nuk mund të kërkohet.",
+    "en": "Location search is unavailable.",
+    "de": "Ortssuche nicht verfügbar."
+  },
+  "Vendndodhja nuk mund të merret. Kontrollo cilësimet e shfletuesit dhe provo përsëri.": {
+    "sq": "Vendndodhja nuk mund të merret. Kontrollo cilësimet e shfletuesit dhe provo përsëri.",
+    "en": "Location could not be determined. Search manually or check browser settings.",
+    "de": "Standort konnte nicht ermittelt werden. Suche manuell oder prüfe die Browsereinstellungen."
+  },
+  "Vetura": {
+    "sq": "Vetura",
+    "en": "Vehicle",
+    "de": "Fahrzeug"
+  },
+  "Vetura të regjistruara në llogarinë tënde.": {
+    "sq": "Vetura të regjistruara në llogarinë tënde.",
+    "en": "Vehicles saved in your account.",
+    "de": "In deinem Konto gespeicherte Fahrzeuge."
+  },
+  "Vetura u fshi.": {
+    "sq": "Vetura u fshi.",
+    "en": "Vehicle deleted.",
+    "de": "Fahrzeug gelöscht."
+  },
+  "Vetura u përditësua.": {
+    "sq": "Vetura u përditësua.",
+    "en": "Vehicle updated.",
+    "de": "Fahrzeug aktualisiert."
+  },
+  "Vetura u shtua me sukses.": {
+    "sq": "Vetura u shtua me sukses.",
+    "en": "Vehicle added successfully.",
+    "de": "Fahrzeug erfolgreich hinzugefügt."
+  },
+  "Veturat e mia": {
+    "sq": "Veturat e mia",
+    "en": "My vehicles",
+    "de": "Meine Fahrzeuge"
+  },
+  "Veturat nuk u ngarkuan.": {
+    "sq": "Veturat nuk u ngarkuan.",
+    "en": "Vehicles could not be loaded.",
+    "de": "Fahrzeuge konnten nicht geladen werden."
+  },
+  "Veturat · Terminet · Diagnostikimi": {
+    "sq": "Veturat · Terminet · Diagnostikimi",
+    "en": "Vehicles · Appointments · Assessments",
+    "de": "Fahrzeuge · Termine · Auswertungen"
+  },
+  "Veturat, terminet dhe historiku janë privatë. Kyçu për t'i ruajtur dhe menaxhuar në llogarinë tënde.": {
+    "sq": "Veturat, terminet dhe historiku janë privatë. Kyçu për t'i ruajtur dhe menaxhuar në llogarinë tënde.",
+    "en": "Vehicles, appointments and history are private. Sign in to save and manage them in your account.",
+    "de": "Fahrzeuge, Termine und Verlauf sind privat. Melde dich an, um sie in deinem Konto zu speichern und zu verwalten."
+  },
+  "Viti": {
+    "sq": "Viti",
+    "en": "Year",
+    "de": "Baujahr"
+  },
+  "Vlerësim paraprak": {
+    "sq": "Vlerësim paraprak",
+    "en": "Initial guidance",
+    "de": "Erste Einschätzung"
+  },
+  "Zgjidh një vend ose përdor vendndodhjen për të gjetur servise kudo në botë.": {
+    "sq": "Zgjidh një vend ose përdor vendndodhjen për të gjetur servise kudo në botë.",
+    "en": "Choose a place or use your location to find repair shops worldwide.",
+    "de": "Wähle einen Ort oder nutze deinen Standort, um weltweit Werkstätten zu finden."
+  },
+  "Zgjidh vendin": {
+    "sq": "Zgjidh vendin",
+    "en": "Select location",
+    "de": "Ort auswählen"
+  },
+  "Zgjidh veturën": {
+    "sq": "Zgjidh veturën",
+    "en": "Select vehicle",
+    "de": "Fahrzeug auswählen"
+  },
+  "Zgjidh veturën dhe analizo një kod.": {
+    "sq": "Zgjidh veturën dhe analizo një kod.",
+    "en": "Select a vehicle and review a code.",
+    "de": "Wähle ein Fahrzeug und werte einen Code aus."
+  },
+  "Zgjidh veturën dhe kohën e përshtatshme.": {
+    "sq": "Zgjidh veturën dhe kohën e përshtatshme.",
+    "en": "Select a vehicle and a suitable time.",
+    "de": "Wähle ein Fahrzeug und einen passenden Zeitpunkt."
+  },
+  "p.sh. Berlin, Milano ose një adresë": {
+    "sq": "p.sh. Berlin, Milano ose një adresë",
+    "en": "e.g. Berlin, Milan or an address",
+    "de": "z. B. Berlin, Mailand oder eine Adresse"
+  },
+  "p.sh. Kontroll periodik i veturës": {
+    "sq": "p.sh. Kontroll periodik i veturës",
+    "en": "e.g. Routine vehicle inspection",
+    "de": "z. B. Regelmäßige Fahrzeuginspektion"
+  },
+  "p.sh. Timoni dridhet kur frenoj dhe zhurma vjen nga rrotat e përparme...": {
+    "sq": "p.sh. Timoni dridhet kur frenoj dhe zhurma vjen nga rrotat e përparme...",
+    "en": "e.g. The steering wheel shakes when braking and the noise comes from the front wheels…",
+    "de": "z. B. Das Lenkrad vibriert beim Bremsen und das Geräusch kommt von den Vorderrädern…"
+  },
+  "rezultate · brenda 5 km": {
+    "sq": "rezultate · brenda 5 km",
+    "en": "results · within 5 km",
+    "de": "Ergebnisse · im Umkreis von 5 km"
+  },
+  "termine": {
+    "sq": "termine",
+    "en": "appointments",
+    "de": "Termine"
+  },
+  "vetura": {
+    "sq": "vetura",
+    "en": "vehicles",
+    "de": "Fahrzeuge"
+  },
+  "ÇFARË MUND TË BËSH": {
+    "sq": "ÇFARË MUND TË BËSH",
+    "en": "WHAT YOU CAN DO",
+    "de": "DEINE MÖGLICHKEITEN"
+  },
+  "Çfarë problemi ka vetura?": {
+    "sq": "Çfarë problemi ka vetura?",
+    "en": "What is wrong with the vehicle?",
+    "de": "Welches Problem hat das Fahrzeug?"
+  },
+  "Çfarë shërbimi të duhet?": {
+    "sq": "Çfarë shërbimi të duhet?",
+    "en": "What service do you need?",
+    "de": "Welchen Service benötigst du?"
+  },
+  "← Kthehu te faqja kryesore": {
+    "sq": "← Kthehu te faqja kryesore",
+    "en": "← Back to home",
+    "de": "← Zurück zur Startseite"
+  },
+  "🔧 SERVIS ·": {
+    "sq": "🔧 SERVIS ·",
+    "en": "🔧 REPAIR SHOP ·",
+    "de": "🔧 WERKSTATT ·"
+  },
+  "Përkthe për mekanikun": {
+    "sq": "Përkthe për mekanikun",
+    "en": "Translate for mechanic",
+    "de": "Für die Werkstatt übersetzen"
+  },
+  "Përkthe vetëm atë që ke vërejtur. Kontrolloje tekstin para se ta ndash; përkthimi nuk është diagnozë.": {
+    "sq": "Përkthe vetëm atë që ke vërejtur. Kontrolloje tekstin para se ta ndash; përkthimi nuk është diagnozë.",
+    "en": "Translate only what you observed. Check the text before sharing; translation is not a diagnosis.",
+    "de": "Übersetze nur deine Beobachtungen. Prüfe den Text vor dem Teilen; eine Übersetzung ist keine Diagnose."
+  },
+  "Përshkrimi për mekanikun": {
+    "sq": "Përshkrimi për mekanikun",
+    "en": "Description for the mechanic",
+    "de": "Beschreibung für die Werkstatt"
+  },
+  "Gjuha e mekanikut": {
+    "sq": "Gjuha e mekanikut",
+    "en": "Mechanic's language",
+    "de": "Sprache der Werkstatt"
+  },
+  "Duke përkthyer...": {
+    "sq": "Duke përkthyer...",
+    "en": "Translating…",
+    "de": "Wird übersetzt…"
+  },
+  "Përkthe": {
+    "sq": "Përkthe",
+    "en": "Translate",
+    "de": "Übersetzen"
+  },
+  "Teksti u kopjua.": {
+    "sq": "Teksti u kopjua.",
+    "en": "Text copied.",
+    "de": "Text kopiert."
+  },
+  "Kopjoje tekstin manualisht.": {
+    "sq": "Kopjoje tekstin manualisht.",
+    "en": "Please copy the text manually.",
+    "de": "Bitte kopiere den Text manuell."
+  },
+  "Kopjo tekstin": {
+    "sq": "Kopjo tekstin",
+    "en": "Copy text",
+    "de": "Text kopieren"
+  },
+  "Përkthimi nuk është i vlefshëm.": {
+    "sq": "Përkthimi nuk është i vlefshëm.",
+    "en": "The translation response is invalid.",
+    "de": "Die Übersetzungsantwort ist ungültig."
+  },
+  "Përkthimi nuk është i disponueshëm.": {
+    "sq": "Përkthimi nuk është i disponueshëm.",
+    "en": "Translation is unavailable.",
+    "de": "Übersetzung nicht verfügbar."
+  },
+  "Përgjigjja e analizës AI nuk është e vlefshme.": {
+    "sq": "Përgjigjja e analizës AI nuk është e vlefshme.",
+    "en": "The AI response is invalid. Please try again.",
+    "de": "Die KI-Antwort ist ungültig. Bitte erneut versuchen."
+  },
+  "Vlerësim orientues AI": {
+    "sq": "Vlerësim orientues AI",
+    "en": "AI guidance",
+    "de": "KI-Orientierung"
+  },
+  "Pending": {
+    "sq": "Pending",
+    "en": "Pending",
+    "de": "Ausstehend"
+  },
+  "InProgress": {
+    "sq": "InProgress",
+    "en": "In progress",
+    "de": "In Bearbeitung"
+  },
+  "Completed": {
+    "sq": "Completed",
+    "en": "Completed",
+    "de": "Abgeschlossen"
+  },
+  "Cancelled": {
+    "sq": "Cancelled",
+    "en": "Cancelled",
+    "de": "Abgesagt"
+  },
+  "ANALIZA E RE": {
+    "sq": "ANALIZA E RE",
+    "en": "NEW ASSESSMENT",
+    "de": "NEUE AUSWERTUNG"
+  },
+  "Përdorues": {
+    "sq": "Përdorues",
+    "en": "User",
+    "de": "Benutzer"
+  },
+  "A dëshiron ta fshish {vehicle}?": {
+    "sq": "A dëshiron ta fshish {vehicle}?",
+    "en": "Delete {vehicle}?",
+    "de": "{vehicle} löschen?"
+  },
+  "Ndrysho statusin e terminit {id}": {
+    "sq": "Ndrysho statusin e terminit {id}",
+    "en": "Change status of appointment {id}",
+    "de": "Status von Termin {id} ändern"
+  },
+  "{distance} larg": {
+    "sq": "{distance} larg",
+    "en": "{distance} away",
+    "de": "{distance} entfernt"
+  },
+  "Duke ngarkuar historikun...": {
+    "sq": "Duke ngarkuar historikun...",
+    "en": "Loading history…",
+    "de": "Verlauf wird geladen…"
+  }
+}
