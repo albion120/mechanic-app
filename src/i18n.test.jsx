@@ -3,6 +3,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import { expect, it } from 'vitest';
 import App from './App';
 import resources from './locales/translations.json';
+import marketplace from './locales/marketplace.json';
 
 it('changes UI language without reloading and saves the manual preference', () => {
   localStorage.removeItem('token');
@@ -15,6 +16,12 @@ it('changes UI language without reloading and saves the manual preference', () =
 });
 it('has complete resources for all three supported interface languages', () => {
   for (const entry of Object.values(resources)) for (const language of ['sq','en','de']) expect(entry[language]?.trim()).toBeTruthy();
+});
+it('has Albanian and German translations for the English marketplace keys', () => {
+  for (const [english, entry] of Object.entries(marketplace)) {
+    expect(english.trim()).toBeTruthy();
+    for (const language of ['sq', 'de']) expect(entry[language]?.trim()).toBeTruthy();
+  }
 });
 it('explains why a guest needs an account for vehicle history', () => {
   localStorage.removeItem('token');

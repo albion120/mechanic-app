@@ -25,6 +25,14 @@ describe("AiMechanic follow-up flow", () => {
     vi.restoreAllMocks();
   });
 
+  it("shows vehicle loading errors instead of pretending the account has no vehicles", async () => {
+    apiRequest.mockReset();
+    apiRequest.mockRejectedValueOnce(new Error("Backend unavailable"));
+    render(<AiMechanic onSessionExpired={vi.fn()} />);
+    expect((await screen.findByRole("alert")).textContent).toContain("Backend unavailable");
+    expect(screen.queryByRole("button", { name: "Analizo problemin" })).toBeNull();
+  });
+
   it("asks for clarifying details before showing causes, then submits the answers", async () => {
     apiRequest
       .mockResolvedValueOnce({

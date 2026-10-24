@@ -1,5 +1,6 @@
 import { useSyncExternalStore } from "react";
 import translations from "./locales/translations.json";
+import marketplace from "./locales/marketplace.json";
 
 export const languages = { sq: "Shqip", en: "English", de: "Deutsch" };
 const listeners = new Set();
@@ -24,7 +25,7 @@ const subscribe = listener => { listeners.add(listener); return () => listeners.
 export const useLanguage = () => useSyncExternalStore(subscribe, currentLanguage, () => "sq");
 // Natural Albanian keys preserve existing copy while resources hold every locale.
 export function t(key, values = {}) {
-  const text = translations[key]?.[currentLanguage()] ?? key;
+  const text = marketplace[key]?.[currentLanguage()] ?? translations[key]?.[currentLanguage()] ?? key;
   return text.replace(/\{(\w+)\}/g, (match, name) => values[name] ?? match);
 }
 export const dateLocale = () => ({ sq: "sq-AL", en: "en-GB", de: "de-DE" })[currentLanguage()];

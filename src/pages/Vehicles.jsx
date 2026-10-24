@@ -19,10 +19,12 @@ function Vehicles({ onSessionExpired }) {
                 throw new Error(t("Përgjigjja e serverit për veturat nuk është e vlefshme."));
             }
             setVehicles(data);
+            return true;
         } catch (error) {
             setMessage(
                 handleRequestError(error, onSessionExpired, t("Nuk mund të ngarkohen veturat."))
             );
+            return false;
         } finally {
             setIsLoading(false);
         }
@@ -83,8 +85,9 @@ function Vehicles({ onSessionExpired }) {
                 }
             );
             resetForm();
-            await loadVehicles();
-            setMessage(editingId === null ? t("Vetura u shtua me sukses.") : t("Vetura u përditësua."));
+            if (await loadVehicles()) {
+                setMessage(editingId === null ? t("Vetura u shtua me sukses.") : t("Vetura u përditësua."));
+            }
         } catch (error) {
             setMessage(
                 handleRequestError(error, onSessionExpired, t("Nuk mund të ruhet vetura."))
@@ -112,6 +115,7 @@ function Vehicles({ onSessionExpired }) {
         try {
             await apiRequest(`/api/vehicles/${vehicle.id}`, { method: "DELETE" });
             setVehicles((current) => current.filter((item) => item.id !== vehicle.id));
+            if (editingId === vehicle.id) resetForm();
             setMessage(t("Vetura u fshi."));
         } catch (error) {
             setMessage(
@@ -141,6 +145,7 @@ function Vehicles({ onSessionExpired }) {
                         <span className="panel-icon" aria-hidden="true">+</span>
                     </div>
                     <form className="form-stack" onSubmit={saveVehicle}>
+                        <fieldset className="form-stack form-fields" disabled={isSaving}>
                         <label className="field">
                             <span>{t("Marka")}</span>
                             <input required maxLength="80" value={form.brand} onChange={(event) => setForm({ ...form, brand: event.target.value })} placeholder="p.sh. BMW" />
@@ -164,6 +169,7 @@ function Vehicles({ onSessionExpired }) {
                                 {isSaving ? t("Duke ruajtur...") : editingId === null ? t("Shto veturën") : t("Ruaj ndryshimet")}
                             </button>
                         </div>
+                        </fieldset>
                     </form>
                 </section>
 
@@ -194,8 +200,8 @@ function Vehicles({ onSessionExpired }) {
                                         <span className="plate">{vehicle.licensePlate}</span>
                                     </div>
                                     <div className="card-actions">
-                                        <button className="button button-quiet button-small" onClick={() => editVehicle(vehicle)}>{t("Ndrysho")}</button>
-                                        <button className="button button-danger button-small" onClick={() => deleteVehicle(vehicle)}>{t("Fshij")}</button>
+                                        <button className="button button-quiet button-small" disabled={isSaving} onClick={() => editVehicle(vehicle)}>{t("Ndrysho")}</button>
+                                        <button className="button button-danger button-small" disabled={isSaving} onClick={() => deleteVehicle(vehicle)}>{t("Fshij")}</button>
                                     </div>
                                 </article>
                             ))}

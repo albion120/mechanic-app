@@ -18,8 +18,8 @@ export default function MechanicTranslator({ initialText = "" }) {
     setBusy(true); setMessage(""); setResult("");
     try {
       const response = await apiRequest("/api/ai/translate", { method: "POST", body: { text: text.trim(), targetLanguage } });
-      if (typeof response?.text !== "string" || response.targetLanguage !== targetLanguage) throw new Error(t("Përkthimi nuk është i vlefshëm."));
-      if (version === revision.current) setResult(response.text);
+      if (typeof response?.text !== "string" || !response.text.trim() || response.text.length > 4000 || response.targetLanguage !== targetLanguage) throw new Error(t("Përkthimi nuk është i vlefshëm."));
+      if (version === revision.current) setResult(response.text.trim());
     } catch (error) {
       if (version === revision.current) setMessage(handleRequestError(error, undefined, t("Përkthimi nuk është i disponueshëm.")));
     } finally { setBusy(false); }

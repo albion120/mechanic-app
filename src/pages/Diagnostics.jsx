@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { currentLanguage } from "../i18n";
 import { validateDiagnosis, serviceDescription } from "../diagnosis";
 import MechanicTranslator from "../components/MechanicTranslator";
+import { TRANSLATION_ENABLED } from "../features";
 import { apiRequest, handleRequestError } from "../api";
 
 const urgencyLabels = {
@@ -95,7 +96,7 @@ function Diagnostics({ onSessionExpired, onBookService, onFindMechanics }) {
       });
       validateDiagnosis(result);
       setDiagnosis(result);
-      setFollowUpAnswers("");
+      if (!result.needsMoreInfo) setFollowUpAnswers("");
       setHistory((items) => [result, ...items]);
     } catch (error) {
       setMessage(handleRequestError(error, onSessionExpired, t("Diagnostikimi nuk mund të kryhet.")));
@@ -166,11 +167,11 @@ function Diagnostics({ onSessionExpired, onBookService, onFindMechanics }) {
       {item.userSymptoms && <p className="muted">{t("Simptomat:")}{item.userSymptoms}</p>}
       {isCurrent && (!item.needsMoreInfo || item.urgency === "Critical") && (
         <div className="diagnostic-actions">
-          {!item.needsMoreInfo && <button className="button button-primary" onClick={() => onBookService(vehicleId, serviceDescription(item.userSymptoms || symptoms, item, item.diagnosticCode))}>{t("Cakto servis")}</button>}
+          {!item.needsMoreInfo && <button className="button button-primary" onClick={() => onBookService(vehicleId, serviceDescription(item.userSymptoms || symptoms, item, item.diagnosticCode), item.id)}>{t("Cakto servis")}</button>}
           <button className="button button-quiet" onClick={() => onFindMechanics()}>{t("Gjej mekanikë pranë")}</button>
         </div>
       )}
-      {isCurrent && <MechanicTranslator key={item.id} initialText={item.userSymptoms || symptoms} />}
+      {isCurrent && TRANSLATION_ENABLED && <MechanicTranslator key={item.id} initialText={item.userSymptoms || symptoms} />}
     </article>
   );
 

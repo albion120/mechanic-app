@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "MechanicApp: Nise API-në lokale",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-Command",
+        "$env:Jwt__Key = [guid]::NewGuid().ToString() + [guid]::NewGuid().ToString(); dotnet run --configuration LocalHttp --launch-profile http"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}\\..\\..\\MechanicApp.API"
+      },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "MechanicApp: Nise frontend-in",
+      "type": "process",
+      "command": "npm",
+      "args": ["run", "dev"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}

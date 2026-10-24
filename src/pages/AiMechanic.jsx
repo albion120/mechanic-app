@@ -2,6 +2,7 @@ import { t } from "../i18n";
 import { useEffect, useState } from "react";
 import { currentLanguage } from "../i18n";
 import { validateDiagnosis, serviceDescription } from "../diagnosis";
+import { TRANSLATION_ENABLED } from "../features";
 import MechanicTranslator from "../components/MechanicTranslator";
 import { apiRequest, handleRequestError } from "../api";
 
@@ -12,7 +13,7 @@ const urgencyLabels = {
   critical: "Kritike",
 };
 
-function AiMechanic({ onSessionExpired, onBookService, onFindMechanics }) {
+function AiMechanic({ onSessionExpired, onBookService, onFindMechanics, initialVehicleId = "" }) {
   const [vehicles, setVehicles] = useState([]);
   const [vehicleId, setVehicleId] = useState("");
   const [problemDescription, setProblemDescription] = useState("");
@@ -31,7 +32,7 @@ function AiMechanic({ onSessionExpired, onBookService, onFindMechanics }) {
         if (!Array.isArray(data)) {
           throw new Error(t("Përgjigjja e serverit për veturat nuk është e vlefshme."));
         }
-        if (isCurrent) setVehicles(data);
+        if (isCurrent) { setVehicles(data); setVehicleId(data.some(v => String(v.id) === String(initialVehicleId)) ? String(initialVehicleId) : ""); }
       } catch (error) {
         if (isCurrent) {
           setMessage(
@@ -47,7 +48,7 @@ function AiMechanic({ onSessionExpired, onBookService, onFindMechanics }) {
     return () => {
       isCurrent = false;
     };
-  }, [onSessionExpired]);
+  }, [onSessionExpired, initialVehicleId]);
 
   const analyzeProblem = async (event) => {
     event.preventDefault();
@@ -97,15 +98,16 @@ function AiMechanic({ onSessionExpired, onBookService, onFindMechanics }) {
         <div>
           <span className="eyebrow">{t("ASISTENTI I SERVISIT")}</span>
           <h1>{t("AI Mechanic")}</h1>
-          <p className="muted">{t("Përshkruaje problemin dhe merr udhëzime për hapat e ardhshëm.")}</p>
+          <p className="muted">{t("Describe symptoms, answer follow-up questions, understand urgency and find real workshops.")}</p>
         </div>
         <span className="count-badge">{t("Vlerësim paraprak")}</span>
       </div>
 
+      <p className="notice">{t("The assistant uses an external AI provider for analysis. Do not include personal details. Workshop results come from the map and partner directory, not AI-generated businesses.")}</p>
       {isLoading ? (
         <div className="empty-state"><span className="spinner" />{t("Duke ngarkuar veturat...")}</div>
       ) : vehicles.length === 0 ? (
-        <div className="notice notice-info">{t("Shto së pari një veturë që asistenti të marrë parasysh modelin e saj.")}</div>
+        <div className={message ? "notice notice-error" : "notice notice-info"} role={message ? "alert" : "status"}>{message || t("Shto së pari një veturë që asistenti të marrë parasysh modelin e saj.")}</div>
       ) : (
         <div className="ai-layout">
           <section className="panel ai-form-panel">
@@ -228,7 +230,7 @@ function AiMechanic({ onSessionExpired, onBookService, onFindMechanics }) {
                     <button className="button button-quiet button-wide" onClick={onFindMechanics}>{t("Gjej mekanikë pranë")}</button>
                   </>
                 )}
-                <MechanicTranslator key={problemDescription} initialText={problemDescription} />
+                {TRANSLATION_ENABLED && <MechanicTranslator key={problemDescription} initialText={problemDescription} />}
               </article>
             )}
           </section>

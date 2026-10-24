@@ -11,11 +11,13 @@ node_modules
 dist
 dist-ssr
 test-results
+test-results-live
 playwright-report
 *.local
 .env
 .env.*
 !.env.example
+live-test-results/
 
 # Editor directories and files
 .vscode/*

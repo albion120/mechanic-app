@@ -75,6 +75,15 @@ describe("NearbyMechanics", () => {
     expect(screen.getByText("Orari nuk është dhënë")).toBeTruthy();
   });
 
+  it("roadside mode remains opt-in and only labels explicitly reported towing", async () => {
+    apiRequest.mockResolvedValue([{ id: 'node/1', name: 'Tow fixture', offersTowing: true, latitude: 42.66, longitude: 21.16, distanceMeters: 10, openStreetMapUrl: 'https://www.openstreetmap.org/node/1' }]);
+    render(<NearbyMechanics emergency />);
+    expect(navigator.geolocation.getCurrentPosition).not.toHaveBeenCalled();
+    fireEvent.click(screen.getByRole('button', { name: 'Përdor vendndodhjen' }));
+    expect(await screen.findByText('Tërheqja është listuar në OpenStreetMap')).toBeTruthy();
+    expect(apiRequest).toHaveBeenCalledWith('/api/mechanics/nearby', { method: 'POST', body: { latitude: 42.66, longitude: 21.16, radiusMeters: 5000, includeRoadside: true } });
+  });
+
   it("shows the user's map location even when the mechanic search fails", async () => {
     apiRequest.mockRejectedValue(new Error(
       "Kërkimi i serviseve nuk është i disponueshëm. Burimi i të dhënave OpenStreetMap nuk u përgjigj. Provo përsëri më vonë."

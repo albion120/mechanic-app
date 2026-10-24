@@ -1,7 +1,9 @@
+import { Icon, EmptyState, Badge } from "../components/ui";
 import { t } from "../i18n";
 import { useEffect, useRef, useState } from "react";
 import { MapContainer, Marker, Popup, TileLayer, useMap, useMapEvents } from "react-leaflet";
 import L from "leaflet";
+import { TRANSLATION_ENABLED } from "../features";
 import MechanicTranslator from "../components/MechanicTranslator";
 import "leaflet/dist/leaflet.css";
 import { apiRequest, handleRequestError } from "../api";
@@ -54,7 +56,7 @@ function MapClickHandler({ onSelect }) {
   return null;
 }
 
-function NearbyMechanics({ onSessionExpired } = {}) {
+function NearbyMechanics({ onSessionExpired, emergency = false } = {}) {
   const [location, setLocation] = useState(() => {
     try {
       const saved = JSON.parse(sessionStorage.getItem("mechanic-location") || "null");
@@ -66,6 +68,8 @@ function NearbyMechanics({ onSessionExpired } = {}) {
   useEffect(() => { mounted.current = true; return () => { mounted.current = false; }; }, []);
   const [locationSource, setLocationSource] = useState("");
   const [mechanics, setMechanics] = useState([]);
+  const [filter, setFilter] = useState("all");
+  const visibleMechanics = mechanics.filter(m => filter === "all" || (filter === "phone" ? !!m.phone : !!m.website));
   const [mapStyle, setMapStyle] = useState("street");
   const [address, setAddress] = useState("");
   const [locationMatches, setLocationMatches] = useState([]);
@@ -87,7 +91,7 @@ function NearbyMechanics({ onSessionExpired } = {}) {
     try {
       const result = await apiRequest("/api/mechanics/nearby", {
         method: "POST",
-        body: { latitude: center.latitude, longitude: center.longitude, radiusMeters: 5000 },
+        body: { latitude: center.latitude, longitude: center.longitude, radiusMeters: 5000, ...(emergency ? { includeRoadside: true } : {}) },
       });
       if (!Array.isArray(result)) throw new Error(t("Përgjigjja e serviseve nuk është e vlefshme."));
       if (!mounted.current) return;
@@ -164,18 +168,20 @@ function NearbyMechanics({ onSessionExpired } = {}) {
   };
 
   return (
-    <section>
+    <section className="nearby-page">
       <div className="page-heading">
         <div>
           <span className="eyebrow">{t("GJETJA E SERVISEVE")}</span>
-          <h1>{t("Mekanika pranë teje")}</h1>
+          <h1>{t(emergency ? 'I need help now' : "Mekanika pranë teje")}</h1>
           <p className="muted">{t("Rezultatet në hartën tonë vijnë nga OpenStreetMap dhe mund të jenë jo të plota. Për më shumë rezultate, kërko edhe në Google Maps.")}</p>
         </div>
-        <button className="button button-primary" onClick={searchAgain} disabled={isSearching}>
+        <button className="button button-primary" onClick={emergency ? searchNearby : searchAgain} disabled={isSearching}>
           {isSearching ? t("Duke kërkuar...") : location ? t("Kërko përsëri") : t("Përdor vendndodhjen")}
         </button>
       </div>
-      <p className="notice notice-info location-privacy">{t("Shkruaj emrin e servisit ose adresën dhe zgjidh vendin për kërkim, ose kliko pikën në hartë. Mund ta përdorësh edhe vendndodhjen tënde. Kërkimi dërgohet te OpenStreetMap. Rezultatet ruhen përkohësisht në cache; pika e zgjedhur ruhet në këtë skedë për një orë.")}</p>
+      <div className="market-actions"><a className="button button-quiet" href="#/partners">{t('Find a partner')}</a></div>
+      {emergency && <p className="notice">{t('This is not an emergency dispatch service. Search real map contacts and confirm assistance by phone. Towing is shown only when explicitly listed in OpenStreetMap.')}</p>}
+      <details className="location-privacy"><summary>{t("Location and map data")}</summary><p>{t("Shkruaj emrin e servisit ose adresën dhe zgjidh vendin për kërkim, ose kliko pikën në hartë. Mund ta përdorësh edhe vendndodhjen tënde. Kërkimi dërgohet te OpenStreetMap. Rezultatet ruhen përkohësisht në cache; pika e zgjedhur ruhet në këtë skedë për një orë.")}</p></details>
       <form className="location-search" onSubmit={searchAddress}>
         <label htmlFor="mechanic-location">{t("Emri i servisit ose adresa")}</label>
         <div className="location-search-controls">
@@ -252,7 +258,7 @@ function NearbyMechanics({ onSessionExpired } = {}) {
               <Popup>{locationSource === "device" ? t("Ti je këtu") : t("Pika e zgjedhur për kërkim")}</Popup>
             </Marker>
           )}
-          {mechanics.map((mechanic) => (
+          {visibleMechanics.map((mechanic) => (
             <Marker key={mechanic.id} position={[mechanic.latitude, mechanic.longitude]} icon={mechanicLocationIcon}>
               <Popup>
                 <strong>{t("🔧 SERVIS ·")}{mechanic.name || t("Pa emër në OpenStreetMap")}</strong><br />
@@ -272,10 +278,12 @@ function NearbyMechanics({ onSessionExpired } = {}) {
       </div>
       {location && (
         <>
-          <div className="section-heading mechanics-heading"><div><h2>{t("Serviset e gjetura")}</h2><p className="muted">{mechanics.length}{t("rezultate · brenda 5 km")}</p></div></div>
-          {mechanics.length > 0 && <div className="mechanics-list">{mechanics.map((mechanic) => (
+          <div className="filter-chips" role="group" aria-label={t('Filter results')}>{[['all','All workshops'],['phone','Phone available'],['website','Website available']].map(([value,label]) => <button type="button" key={value} className="filter-chip" aria-pressed={filter === value} onClick={() => setFilter(value)}>{t(label)}</button>)}</div>
+          <div className="section-heading mechanics-heading"><div><h2>{t("Serviset e gjetura")}</h2><p className="muted">{visibleMechanics.length}{t("rezultate · brenda 5 km")}</p></div></div>
+          {mechanics.length > 0 && visibleMechanics.length === 0 && <EmptyState title="No results match these filters" />}
+          {visibleMechanics.length > 0 && <div className="mechanics-list">{visibleMechanics.map((mechanic) => (
             <article className="mechanic-card" key={mechanic.id}>
-              <div className="vehicle-symbol" aria-hidden="true">🔧</div>
+              <div className="ui-icon-tile"><Icon name="tool" /></div>
               <div className="vehicle-info">
                 <h3>{mechanic.name || t("Servis pa emër në OpenStreetMap")}</h3>
                 <p>{mechanic.address || t("Adresa nuk është dhënë")}</p>
@@ -291,6 +299,7 @@ function NearbyMechanics({ onSessionExpired } = {}) {
                       longitude: mechanic.longitude,
                     })}
                   >{t("Shiko në hartë")}</button>
+                  {mechanic.offersTowing && <Badge>{t('Towing listed in OpenStreetMap')}</Badge>}
                   {mechanic.phone && <a href={`tel:${mechanic.phone.replace(/[^+0-9,;*#]/g, "")}`}>{mechanic.phone}</a>}
                   {/^https?:\/\//i.test(mechanic.website || "") && <a href={mechanic.website} target="_blank" rel="noreferrer">{t("Uebfaqja")}</a>}
                   <a href={mechanic.openStreetMapUrl} target="_blank" rel="noreferrer">{t("OpenStreetMap")}</a>
@@ -302,7 +311,7 @@ function NearbyMechanics({ onSessionExpired } = {}) {
           ))}</div>}
         </>
       )}
-      <MechanicTranslator />
+      {TRANSLATION_ENABLED && <MechanicTranslator />}
       <p className="map-attribution">{t("Serviset shënohen me ikonën 🔧. Të dhënat e bizneseve: OpenStreetMap contributors, licencë ODbL. Konfirmo detajet direkt me servisin para vizitës.")}</p>
     </section>
   );

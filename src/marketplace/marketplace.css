@@ -1,0 +1,20 @@
+.marketplace { display: grid; gap: 1.25rem; min-width: 0; }
+.topbar { flex-wrap: wrap; }
+.topbar .main-nav { flex: 1 1 100%; order: 3; flex-wrap: wrap; min-width: 0; }
+.marketplace *, .marketplace *::before, .marketplace *::after { box-sizing: border-box; min-width: 0; max-width: 100%; }
+.marketplace p, .marketplace h1, .marketplace h2, .marketplace h3, .marketplace a { overflow-wrap: anywhere; }
+.market-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 1rem; }
+.marketplace .panel { display: grid; align-content: start; gap: .75rem; }
+.marketplace fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: .9rem; width: 100%; }
+.marketplace form, .market-form { display: grid; gap: 1rem; }
+.marketplace .field { display: grid; gap: .4rem; }
+.marketplace input:not([type=checkbox]), .marketplace select, .marketplace textarea { width: 100%; min-height: 44px; }
+.marketplace .button { min-height: 44px; white-space: normal; }
+.market-actions { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
+.market-check { display: flex; align-items: flex-start; gap: .7rem; overflow-wrap: anywhere; }
+.market-check input { flex: 0 0 22px; width: 22px; height: 22px; }
+.slot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: .6rem; }
+.slot-card { border: 1px solid #64748b; padding: .75rem; border-radius: .6rem; }
+.marketplace article + article { border-top: 1px solid #64748b; padding-top: 1rem; }
+.marketplace summary { cursor: pointer; min-height: 44px; }
+@media (max-width: 430px) { .marketplace .panel { padding: 1rem; } .market-actions > .button { flex: 1 1 auto; } }

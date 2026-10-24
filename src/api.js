@@ -1,7 +1,7 @@
 import { t } from "./i18n";
 const apiUrl = (
   import.meta.env.VITE_API_URL ??
-  (import.meta.env.DEV ? "https://localhost:7163" : "")
+  (import.meta.env.DEV ? "http://localhost:5180" : "")
 ).replace(/\/+$/, "");
 
 export async function apiRequest(path, options = {}) {
@@ -43,21 +43,25 @@ export async function apiRequest(path, options = {}) {
       ? Object.values(data.errors).flat().join(" ")
       : "";
     const isInternalServerError = response.status >= 500;
-    const responseMessage =
-      typeof data === "string" && isInternalServerError ? "" : data?.message;
-    const message =
+    const isAiRegionError = response.status === 503 && data?.code === "AI_REGION_UNSUPPORTED" &&
+      ["/api/ai/diagnose", "/api/ai/translate", "/api/diagnostics/analyze"].includes(path);
+    const rawMessage = (
       validationErrors ||
-      responseMessage ||
+      data?.message ||
       (data?.title && data?.detail
         ? `${data.title} ${data.detail}`
         : data?.title || data?.detail) ||
-      (typeof data === "string" && !isInternalServerError ? data : "") ||
-      (isInternalServerError
-        ? t("Serveri pati një gabim të brendshëm. Provo përsëri më vonë.")
-        : `Kërkesa dështoi (${response.status}).`);
+      (typeof data === "string" ? data : "") ||
+      `Kërkesa dështoi (${response.status}).`);
+    const message = isAiRegionError
+      ? t("AI nuk është i disponueshëm nga vendndodhja e serverit. Administratori duhet të konfigurojë një vendndodhje ose ofrues të mbështetur.")
+      : isInternalServerError
+      ? t("Serveri pati një gabim të brendshëm. Provo përsëri më vonë.")
+      : t(rawMessage);
     const error = new Error(message);
     error.retryAfter = Number(response.headers.get("Retry-After")) || null;
     error.status = response.status;
+    error.code = data?.code;
     throw error;
   }
 
