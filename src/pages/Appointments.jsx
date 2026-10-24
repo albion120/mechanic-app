@@ -38,10 +38,12 @@ function Appointments({ onSessionExpired, bookingDraft }) {
       }
       setAppointments(appointmentData);
       setVehicles(vehicleData);
+      return true;
     } catch (error) {
       setMessage(
         handleRequestError(error, onSessionExpired, t("Nuk mund të ngarkohen terminet."))
       );
+      return false;
     } finally {
       setIsLoading(false);
     }
@@ -101,8 +103,9 @@ function Appointments({ onSessionExpired, bookingDraft }) {
       );
       setForm(emptyForm);
       setEditingId(null);
-      await loadData();
-      setMessage(editingId === null ? t("Termini u krijua.") : t("Termini u përditësua."));
+      if (await loadData()) {
+        setMessage(editingId === null ? t("Termini u krijua.") : t("Termini u përditësua."));
+      }
     } catch (error) {
       setMessage(
         handleRequestError(error, onSessionExpired, t("Nuk mund të ruhet termini."))
@@ -115,7 +118,7 @@ function Appointments({ onSessionExpired, bookingDraft }) {
   const editAppointment = (appointment) => {
     setEditingId(appointment.id);
     setForm({
-      vehicleId: String(appointment.vehicle?.id ?? ""),
+      vehicleId: String(appointment.vehicle?.id ?? appointment.vehicleId ?? ""),
       appointmentDate: toLocalDateTime(appointment.appointmentDate),
       description: appointment.description ?? "",
     });
@@ -132,6 +135,10 @@ function Appointments({ onSessionExpired, bookingDraft }) {
       setAppointments((current) =>
         current.filter((item) => item.id !== appointment.id)
       );
+      if (editingId === appointment.id) {
+        setEditingId(null);
+        setForm(emptyForm);
+      }
       setMessage(t("Termini u fshi."));
     } catch (error) {
       setMessage(
@@ -160,8 +167,9 @@ function Appointments({ onSessionExpired, bookingDraft }) {
         <span className="count-badge">{appointments.length}{t("termine")}</span>
       </div>
 
+      {message && <p className="notice" role="status">{message}</p>}
       {vehicles.length === 0 && !isLoading ? (
-        <div className="notice notice-info">{t("Shto së pari një veturë që të mund të caktosh termin.")}</div>
+        !message && <div className="notice notice-info">{t("Shto së pari një veturë që të mund të caktosh termin.")}</div>
       ) : (
         <section className="panel appointment-form-panel">
           <div className="panel-heading">
@@ -171,7 +179,8 @@ function Appointments({ onSessionExpired, bookingDraft }) {
             </div>
             <span className="panel-icon" aria-hidden="true">◷</span>
           </div>
-          <form className="appointment-form" onSubmit={saveAppointment}>
+          <form onSubmit={saveAppointment}>
+            <fieldset className="appointment-form form-fields" disabled={isSaving}>
             <label className="field">
               <span>{t("Vetura")}</span>
               <select required value={form.vehicleId} onChange={(event) => setForm({ ...form, vehicleId: event.target.value })}>
@@ -199,8 +208,8 @@ function Appointments({ onSessionExpired, bookingDraft }) {
                 {isSaving ? t("Duke ruajtur...") : editingId === null ? t("Cakto termin") : t("Ruaj ndryshimet")}
               </button>
             </div>
+            </fieldset>
           </form>
-          {message && <p className="notice" role="status">{message}</p>}
         </section>
       )}
 
@@ -241,8 +250,8 @@ function Appointments({ onSessionExpired, bookingDraft }) {
                   <span className="muted">{new Intl.DateTimeFormat(dateLocale(), { dateStyle: "medium", timeStyle: "short" }).format(new Date(appointment.appointmentDate))}</span>
                 </div>
                 <div className="card-actions">
-                  <button className="button button-quiet button-small" onClick={() => editAppointment(appointment)}>{t("Ndrysho")}</button>
-                  <button className="button button-danger button-small" onClick={() => deleteAppointment(appointment)}>{t("Fshij")}</button>
+                  <button className="button button-quiet button-small" disabled={isSaving} onClick={() => editAppointment(appointment)}>{t("Ndrysho")}</button>
+                  <button className="button button-danger button-small" disabled={isSaving} onClick={() => deleteAppointment(appointment)}>{t("Fshij")}</button>
                 </div>
               </article>
             ))}

@@ -8,11 +8,12 @@ describe("Landing", () => {
     render(<Landing onLogin={vi.fn()} onRegister={vi.fn()} />);
 
     expect(screen.getByRole("heading", { name: "Mirëmbajtja e veturës, më e thjeshtë." })).toBeTruthy();
-    expect(screen.getByRole("heading", { name: "Menaxho veturat" })).toBeTruthy();
-    expect(screen.getByRole("heading", { name: "Organizo terminet" })).toBeTruthy();
-    expect(screen.getByRole("heading", { name: "Kupto problemet" })).toBeTruthy();
-    expect(screen.getByRole("heading", { name: "Gjej servise pranë" })).toBeTruthy();
-    expect(screen.getByText("Kërko servise dhe përkthe simptomat pa llogari. Kyçu për veturat, terminet dhe historikun.")).toBeTruthy();
+    expect(screen.getByRole("heading", { name: "Vetura ime" })).toBeTruthy();
+    expect(screen.getByRole("heading", { name: "Terminet e mia" })).toBeTruthy();
+    expect(screen.getByRole("heading", { name: "Serviset partnere" })).toBeTruthy();
+    expect(screen.getByRole("heading", { name: "Gjej një mekanik" })).toBeTruthy();
+    expect(screen.getByRole("link", { name: "Më duhet ndihmë tani" }).getAttribute('href')).toBe('#/roadside');
+    expect(screen.getByText("Gjej ndihmë afër pa llogari.")).toBeTruthy();
   });
 
   it("provides separate login and registration actions", () => {

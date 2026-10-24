@@ -2,6 +2,16 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { apiRequest, handleRequestError } from "./api";
 
 describe("apiRequest", () => {
+  it.each(["/api/ai/diagnose", "/api/ai/translate", "/api/diagnostics/analyze"])("explains the regional restriction for %s without displaying provider details", async path => {
+    vi.stubGlobal("fetch", vi.fn().mockResolvedValue(new Response(JSON.stringify({
+      code: "AI_REGION_UNSUPPORTED", detail: "secret provider diagnostics",
+    }), { status: 503 })));
+    await expect(apiRequest(path)).rejects.toMatchObject({
+      status: 503,
+      message: "AI nuk është i disponueshëm nga vendndodhja e serverit. Administratori duhet të konfigurojë një vendndodhje ose ofrues të mbështetur.",
+    });
+  });
+
   beforeEach(() => {
     vi.stubGlobal("localStorage", {
       getItem: vi.fn(() => null),
@@ -60,7 +70,7 @@ describe("apiRequest", () => {
     });
   });
 
-  it("shows both the title and actionable detail from a server problem", async () => {
+  it("does not expose provider configuration details from a server problem", async () => {
     vi.stubGlobal(
       "fetch",
       vi.fn().mockResolvedValue(
@@ -75,7 +85,7 @@ describe("apiRequest", () => {
     );
 
     await expect(apiRequest("/api/ai/diagnose")).rejects.toMatchObject({
-      message: "OpenAI cannot complete the request. Check available API credits.",
+      message: "Serveri pati një gabim të brendshëm. Provo përsëri më vonë.",
       status: 503,
     });
   });
@@ -96,6 +106,18 @@ describe("apiRequest", () => {
     await expect(apiRequest("/api/diagnostics/vehicles/3")).rejects.toMatchObject({
       message: "Serveri pati një gabim të brendshëm. Provo përsëri më vonë.",
       status: 500,
+    });
+  });
+
+  it.each([
+    { message: "System.InvalidOperationException: private details" },
+    { errors: { Database: ["Internal connection information"] } },
+  ])("hides JSON internal errors regardless of their shape: %j", async body => {
+    vi.stubGlobal("fetch", vi.fn().mockResolvedValue(new Response(JSON.stringify(body), {
+      status: 500, headers: { "Content-Type": "application/json" },
+    })));
+    await expect(apiRequest("/api/vehicles")).rejects.toMatchObject({
+      message: "Serveri pati një gabim të brendshëm. Provo përsëri më vonë.", status: 500,
     });
   });
 

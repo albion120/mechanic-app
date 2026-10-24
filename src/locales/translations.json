@@ -1,4 +1,9 @@
 {
+  "AI nuk është i disponueshëm nga vendndodhja e serverit. Administratori duhet të konfigurojë një vendndodhje ose ofrues të mbështetur.": {
+    "sq": "AI nuk është i disponueshëm nga vendndodhja e serverit. Administratori duhet të konfigurojë një vendndodhje ose ofrues të mbështetur.",
+    "en": "AI is unavailable from the server's location. The administrator must configure a supported location or provider.",
+    "de": "KI ist am Serverstandort nicht verfügbar. Der Administrator muss einen unterstützten Standort oder Anbieter konfigurieren."
+  },
   "Kryefaqja": {
     "sq": "Kryefaqja",
     "en": "Home",

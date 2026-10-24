@@ -6,6 +6,13 @@ import { apiRequest } from '../api';
 
 vi.mock('../api', () => ({ apiRequest: vi.fn(), handleRequestError: error => error.message }));
 beforeEach(() => vi.clearAllMocks());
+it.each(['   ', 'x'.repeat(4001)])('rejects an empty or oversized translation', async text => {
+  apiRequest.mockResolvedValue({ text, targetLanguage: 'de' });
+  render(<MechanicTranslator initialText="Noise at idle" />);
+  fireEvent.click(screen.getByRole('button', { name: 'Përkthe', exact: true }));
+  expect(await screen.findByRole('alert')).toHaveProperty('textContent', 'Përkthimi nuk është i vlefshëm.');
+  expect(screen.queryByRole('button', { name: 'Kopjo tekstin' })).toBeNull();
+});
 it('translates the observed symptoms only, without a saved vehicle or appointment', async () => {
   apiRequest.mockResolvedValue({ text: 'Kein Rauch. Geräusch beim Bremsen.', targetLanguage: 'de' });
   render(<MechanicTranslator initialText="Nuk ka tym. Zhurmë kur frenoj." />);

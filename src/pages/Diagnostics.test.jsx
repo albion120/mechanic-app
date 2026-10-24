@@ -10,6 +10,31 @@ vi.mock("../api", () => ({
 }));
 
 describe("Diagnostics", () => {
+  it("preserves previous answers when the provider requests another clarification", async () => {
+    const clarification = {
+      id: 7, vehicleId: 3, diagnosticCode: "P0301", urgency: "Medium",
+      summary: "More details needed", safetyAdvice: "Stop if unsafe", recommendedAction: "Answer the questions",
+      possibleCauses: [], needsMoreInfo: true, followUpQuestions: ["When?", "Where?"],
+      createdAt: "2026-10-01T12:00:00Z",
+    };
+    apiRequest.mockImplementation(path => Promise.resolve(
+      path === "/api/vehicles" ? [{ id: 3, brand: "BMW", model: "320d", year: 2019 }]
+        : path === "/api/diagnostics/analyze" ? clarification : []));
+    render(<Diagnostics onSessionExpired={vi.fn()} />);
+    fireEvent.change(await screen.findByLabelText("Vetura"), { target: { value: "3" } });
+    fireEvent.change(screen.getByPlaceholderText("p.sh. P0301"), { target: { value: "P0301" } });
+    const submit = screen.getByRole("button", { name: "Analizo dhe ruaj" });
+    await waitFor(() => expect(submit.disabled).toBe(false));
+    fireEvent.click(submit);
+    await screen.findByText("When?");
+    const answers = screen.getByPlaceholderText("Përgjigju pyetjeve që mundesh...");
+    fireEvent.change(answers, { target: { value: "At idle, from the engine." } });
+    fireEvent.click(submit);
+    await waitFor(() => expect(apiRequest.mock.calls.filter(([path]) => path === "/api/diagnostics/analyze")).toHaveLength(2));
+    await waitFor(() => expect(submit.disabled).toBe(false));
+    expect(answers.value).toBe("At idle, from the engine.");
+  });
+
   afterEach(cleanup);
 
   beforeEach(() => {
