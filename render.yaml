@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: mechanicapp-frontend
+    name: mechanicapp-frontend-albion120
     runtime: static
     buildCommand: npm ci && npm run build:production
     staticPublishPath: ./dist
